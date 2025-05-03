@@ -4,8 +4,6 @@ COMMENT-full =		texlive texmf for extra macros
 COMMENT-main =		texlive texmf for basic functionality
 COMMENT-buildset =	smallest texlive texmf for building ports
 
-REVISION =		0
-
 # Please do not directly edit the PLIST files. They are auto-generated.
 #
 # If you move things out of another texmf into the buildset, don't forget to:
@@ -17,7 +15,7 @@ DISTNAME =		texlive-${DIST_V}-texmf
 SITES.pregen =		http://theunixzoo.co.uk/distfiles/
 DISTFILES =		${DISTNAME}${EXTRACT_SUFX} \
 			texlive-${DIST_V}-extra${EXTRACT_SUFX}
-DISTFILES.pregen = 	texmf-var-pregen-${V}${EXTRACT_SUFX}
+#DISTFILES.pregen = 	texmf-var-pregen-${V}${EXTRACT_SUFX}
 
 PKGNAME-main =		texlive_texmf-minimal-${V}
 PKGNAME-full =		texlive_texmf-full-${V}

@@ -1,0 +1,8 @@
+/usr/ports/pobj/texlive-20250308-texmf/fake-amd64/usr/local/man/man1/latex-git-log.1: No one-line description, using filename "latex-git-log"
+/usr/ports/pobj/texlive-20250308-texmf/fake-amd64/usr/local/man/man1/l3sys-query.1: No one-line description, using filename "l3sys-query"
+/usr/ports/pobj/texlive-20250308-texmf/fake-amd64/usr/local/man/man1/l3build.1: No one-line description, using filename "l3build"
+/usr/ports/pobj/texlive-20250308-texmf/fake-amd64/usr/local/man/man1/datatool2bib.1: No one-line description, using filename "datatool2bib"
+
+pkg sizes? kill em?
+
+update SHARED_LIBS

@@ -16,7 +16,6 @@ PKGNAME-synctex =	texlive_synctex-${V}
 
 DISTFILES =		${DISTNAME}${EXTRACT_SUFX} \
 			texlive-${DIST_V}-extra${EXTRACT_SUFX}
-# XXX
 DISTFILES.mk =		mktexlsr-${V}.gz
 
 SITES.mk =		https://theunixzoo.co.uk/distfiles/
@@ -27,7 +26,6 @@ SHARED_LIBS +=		ptexenc		6.1 # 5.6
 SHARED_LIBS +=		synctex		3.1 # 2.0
 SHARED_LIBS +=		texlua53        0.1 # 8.6
 
-# XXX update
 WANTLIB-main += ${COMPILER_LIBCXX} ICE Lerc SM X11 Xau Xaw Xdmcp Xext Xi
 WANTLIB-main += Xmu Xpm Xrender Xt c cairo expat fontconfig freetype
 WANTLIB-main += gd glib-2.0 graphite2 harfbuzz iconv icudata icui18n
@@ -48,9 +46,8 @@ RUN_DEPENDS-main =	graphics/libwebp \
 			print/psutils \
 			print/t1utils \
 			devel/desktop-file-utils \
-			${BASE_PKGPATH},-synctex
-# XXX
-#texlive_texmf-buildset-${V}:print/texlive/texmf,-buildset \
+			${BASE_PKGPATH},-synctex \
+			texlive_texmf-buildset-${V}:print/texlive/texmf,-buildset
 
 LIB_DEPENDS-main =	converters/libiconv \
 			graphics/png \

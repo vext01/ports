@@ -15,7 +15,7 @@ DISTNAME =		texlive-${DIST_V}-texmf
 SITES.pregen =		http://theunixzoo.co.uk/distfiles/
 DISTFILES =		${DISTNAME}${EXTRACT_SUFX} \
 			texlive-${DIST_V}-extra${EXTRACT_SUFX}
-#DISTFILES.pregen = 	texmf-var-pregen-${V}${EXTRACT_SUFX}
+DISTFILES.pregen = 	texmf-var-pregen-${V}${EXTRACT_SUFX}
 
 PKGNAME-main =		texlive_texmf-minimal-${V}
 PKGNAME-full =		texlive_texmf-full-${V}
@@ -40,19 +40,18 @@ MODPY_RUNDEP =		No
 
 .include "adj.mk"
 
-# XXX put back deps
-#RUN_DEPENDS-main +=	texlive_base->=${V}:print/texlive/base,-main \
-#			${FULLPKGNAME-buildset}:print/texlive/texmf,-buildset
-#RUN_DEPENDS-full =	${FULLPKGNAME-main}:print/texlive/texmf,-main \
-#			${MODPY_RUN_DEPENDS} \
-#			${_MODLUA_RUNDEPENDS}
+RUN_DEPENDS-main +=	texlive_base->=${V}:print/texlive/base,-main \
+			${FULLPKGNAME-buildset}:print/texlive/texmf,-buildset
+RUN_DEPENDS-full =	${FULLPKGNAME-main}:print/texlive/texmf,-main \
+			${MODPY_RUN_DEPENDS} \
+			${_MODLUA_RUNDEPENDS}
 # XXX: Can we make context be further towards the top dep chain? Can it depend
 # on only the buildset?
-#RUN_DEPENDS-context +=	${FULLPKGNAME-full}:print/texlive/texmf,-full \
-#			print/luametatex>=2.11.01
-#RUN_DEPENDS-docs +=	texlive_base->=${V}:print/texlive/base,-main \
-#			x11/p5-Tk
-#RUN_DEPENDS-buildset +=	texlive_mktexlsr->=${V}:print/texlive/base,-mktexlsr
+RUN_DEPENDS-context +=	${FULLPKGNAME-full}:print/texlive/texmf,-full \
+			print/luametatex>=2.11.01
+RUN_DEPENDS-docs +=	texlive_base->=${V}:print/texlive/base,-main \
+			x11/p5-Tk
+RUN_DEPENDS-buildset +=	texlive_mktexlsr->=${V}:print/texlive/base,-mktexlsr
 
 MULTI_PACKAGES =	-context -docs -full -main -buildset
 
@@ -128,14 +127,13 @@ do-install: tl-symlinks-main tl-symlinks-full tl-symlinks-context
 	#   updmap-sys
 	#   fmtutil-sys --all
 	#   context --make --all
-	#   mtxrun  --script fonts --reload
+	#   mtxrun --script fonts --reload
 	#
 	# Then you can tar them up and host them as the pregen tarball.
 	#
 	# (Don't forget to remove ls-R files, log files and the luametatex cache
 	# before making the tarball).
-	# XXX put back
-	#mv ${WRKDIR}/texmf-var ${PREFIX}/share
+	mv ${WRKDIR}/texmf-var ${PREFIX}/share
 
 	# Put manuals in the right place.
 	#

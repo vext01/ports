@@ -40,18 +40,19 @@ MODPY_RUNDEP =		No
 
 .include "adj.mk"
 
-RUN_DEPENDS-main +=	texlive_base->=${V}:print/texlive/base,-main \
-			${FULLPKGNAME-buildset}:print/texlive/texmf,-buildset
-RUN_DEPENDS-full =	${FULLPKGNAME-main}:print/texlive/texmf,-main \
-			${MODPY_RUN_DEPENDS} \
-			${_MODLUA_RUNDEPENDS}
+# XXX put back deps
+#RUN_DEPENDS-main +=	texlive_base->=${V}:print/texlive/base,-main \
+#			${FULLPKGNAME-buildset}:print/texlive/texmf,-buildset
+#RUN_DEPENDS-full =	${FULLPKGNAME-main}:print/texlive/texmf,-main \
+#			${MODPY_RUN_DEPENDS} \
+#			${_MODLUA_RUNDEPENDS}
 # XXX: Can we make context be further towards the top dep chain? Can it depend
 # on only the buildset?
-RUN_DEPENDS-context +=	${FULLPKGNAME-full}:print/texlive/texmf,-full \
-			print/luametatex>=2.11.01
-RUN_DEPENDS-docs +=	texlive_base->=${V}:print/texlive/base,-main \
-			x11/p5-Tk
-RUN_DEPENDS-buildset +=	texlive_mktexlsr->=${V}:print/texlive/base,-mktexlsr
+#RUN_DEPENDS-context +=	${FULLPKGNAME-full}:print/texlive/texmf,-full \
+#			print/luametatex>=2.11.01
+#RUN_DEPENDS-docs +=	texlive_base->=${V}:print/texlive/base,-main \
+#			x11/p5-Tk
+#RUN_DEPENDS-buildset +=	texlive_mktexlsr->=${V}:print/texlive/base,-mktexlsr
 
 MULTI_PACKAGES =	-context -docs -full -main -buildset
 
@@ -60,7 +61,7 @@ SUBST_VARS +=		RUBY
 WRKDIST =		${WRKDIR}/texlive-${DIST_V}-texmf
 
 # Substitute correct interpreter paths into scripts and deal with linked
-# manuals.  Some interpreter paths are done automatically by MODULES.
+# manuals. Some interpreter paths are done automatically by MODULES.
 pre-configure:
 	@# Don't use substitution from the Python port, since we need to swap
 	@# in different versions.
@@ -133,7 +134,8 @@ do-install: tl-symlinks-main tl-symlinks-full tl-symlinks-context
 	#
 	# (Don't forget to remove ls-R files, log files and the luametatex cache
 	# before making the tarball).
-	mv ${WRKDIR}/texmf-var ${PREFIX}/share
+	# XXX put back
+	#mv ${WRKDIR}/texmf-var ${PREFIX}/share
 
 	# Put manuals in the right place.
 	#

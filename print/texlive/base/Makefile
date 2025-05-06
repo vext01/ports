@@ -5,7 +5,9 @@ COMMENT-synctex =	synctex for TeXLive typesetting distribution
 # Note that there were several problems with the release tarball this year.
 # Upstream made an svn tag containing the fixes and I've rolled my own tarball
 # from that.
-# XXX links
+#
+# https://tug.org/pipermail/tldistro/2025q1/000512.html
+# https://tug.org/pipermail/tldistro/2025q1/000517.html
 DISTNAME =		texlive-${V}.2-source
 PKGNAME =		texlive_base-${V}
 
@@ -21,8 +23,8 @@ DISTFILES.mk =		mktexlsr-${V}.gz
 SITES.mk =		https://theunixzoo.co.uk/distfiles/
 
 # XXX update
-SHARED_LIBS =		kpathsea	9.0 # 9.2
-SHARED_LIBS +=		ptexenc		6.1 # 5.6
+SHARED_LIBS =		kpathsea	9.1 # 10.1
+SHARED_LIBS +=		ptexenc		6.2 # 6.1
 SHARED_LIBS +=		synctex		3.1 # 2.0
 SHARED_LIBS +=		texlua53        0.1 # 8.6
 

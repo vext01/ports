@@ -22,7 +22,6 @@ DISTFILES.mk =		mktexlsr-${V}.gz
 
 SITES.mk =		https://theunixzoo.co.uk/distfiles/
 
-# XXX update
 SHARED_LIBS =		kpathsea	9.1 # 10.1
 SHARED_LIBS +=		ptexenc		6.2 # 6.1
 SHARED_LIBS +=		synctex		3.1 # 2.0

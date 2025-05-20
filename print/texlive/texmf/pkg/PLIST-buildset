@@ -1,4 +1,3 @@
-@conflict texlive_texmf-minimal-<2024
 share/texmf-local/
 share/texmf-dist/
 share/texmf-dist/bibtex/

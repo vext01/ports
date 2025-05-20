@@ -1,5 +1,3 @@
-@conflict texlive_texmf-full-<2024
-@conflict texlive_texmf-buildset-<2024
 bin/amstex
 bin/cslatex
 bin/csplain

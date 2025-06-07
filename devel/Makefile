@@ -1502,7 +1502,6 @@
      SUBDIR += py-intervaltree
      SUBDIR += py-invoke
      SUBDIR += py-ipykernel
-     SUBDIR += py-ipython_genutils
      SUBDIR += py-iso3166
      SUBDIR += py-iso639
      SUBDIR += py-isodate
@@ -1753,6 +1752,7 @@
      SUBDIR += py-unique-log-filter
      SUBDIR += py-untangle
      SUBDIR += py-urwid
+     SUBDIR += py-urwid_readline
      SUBDIR += py-uvloop
      SUBDIR += py-validators
      SUBDIR += py-vcversioner
@@ -1809,6 +1809,7 @@
      SUBDIR += rebar3,erlang25
      SUBDIR += rebar3,erlang26
      SUBDIR += rebar3,erlang27
+     SUBDIR += rebar3,erlang28
      SUBDIR += remake
      SUBDIR += reposurgeon
      SUBDIR += rgbds

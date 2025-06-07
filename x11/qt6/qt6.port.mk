@@ -1,5 +1,5 @@
-# This fragment defines MODQT_* variables to make it easier to substitute
-# qt4/qt5 in a port.
+# This fragment defines MODQT_* variables to make it easier to substitute qt5
+# in a port.
 MODQT_OVERRIDE_UIC ?=	Yes
 MODQT6_OVERRIDE_UIC ?=	${MODQT_OVERRIDE_UIC}
 
@@ -65,8 +65,3 @@ ONLY_FOR_ARCHS ?= ${CXX11_ARCHS}
 
 MODQT6_VERSION =	${QT6_VERSION}
 MODQT_VERSION ?=	${MODQT6_VERSION}
-
-show_deps: patch
-	@cpkgs=$$(echo ${_MODQT6_CMAKE_PKGS:NQt6} | sed 's/ /|/g'); \
-	find ${WRKSRC} \( -name '*.pr[iof]' -o -iname '*cmake*' \) -exec \
-		egrep -hA 2 "\\<(qtHaveModule|QT_CONFIG|$$cpkgs)\\>|Qt6::" {} +

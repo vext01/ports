@@ -1,8 +1,7 @@
 COMMENT =		GNOME utility to insert unusual characters
 
 GNOME_PROJECT =		gnome-characters
-GNOME_VERSION =		47.0
-REVISION =		0
+GNOME_VERSION =		48.0
 
 HOMEPAGE =		https://apps.gnome.org/Characters/
 
@@ -26,6 +25,11 @@ RUN_DEPENDS =		fonts/noto/emoji \
 			x11/gnome/libadwaita
 
 MODGNOME_TOOLS =	desktop-file-utils gtk-update-icon-cache
+
+# prevent passing -L/usr/local/lib to LDFLAGS (default behavior of the gnome
+# MODULE); otherwise if boehm-gc is installed we will run into undefined symbols
+# due to the bundled libgc.so versus /usr/local/lib/libgc.so
+_MODGNOME_ldflags =	# empty
 
 # Requires unported 'dogtail'
 NO_TEST =		Yes

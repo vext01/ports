@@ -1,15 +1,13 @@
 COMMENT=		window and compositing manager based on Clutter
 
 GNOME_PROJECT=		mutter
-GNOME_VERSION=		47.7
-
+GNOME_VERSION=		48.3.1
 REVISION=		0
 
-SHARED_LIBS += mutter-mtk-15             0.0 # 0.0.0
-SHARED_LIBS += mutter-cogl-15            0.0 # 0.0.0
-SHARED_LIBS += mutter-cogl-pango-15      0.0 # 0.0.0
-SHARED_LIBS += mutter-clutter-15         0.0 # 0.0.0
-SHARED_LIBS += mutter-15                 0.0 # 0.0.0
+SHARED_LIBS += mutter-mtk-16             0.0 # 0.0.0
+SHARED_LIBS += mutter-cogl-16            0.0 # 0.0.0
+SHARED_LIBS += mutter-clutter-16         0.0 # 0.0.0
+SHARED_LIBS += mutter-16                 0.0 # 0.0.0
 
 # GPLv2
 PERMIT_PACKAGE=		Yes
@@ -34,12 +32,16 @@ DEBUG_PACKAGES =	${BUILD_PACKAGES}
 MODGNOME_TOOLS=		desktop-file-utils gobject-introspection
 
 BUILD_DEPENDS=		devel/gsettings-desktop-schemas \
+			devel/py-argcomplete \
+			shells/bash-completion \
 			sysutils/consolekit \
 			wayland/libevdev-openbsd \
 			wayland/libinput-openbsd \
 			wayland/wayland-protocols \
 			wayland/xwayland \
 			x11/gnome/settings-daemon
+
+BUILD_DEPENDS +=	textproc/py-docutils
 
 LIB_DEPENDS=		audio/libcanberra \
 			devel/startup-notification \
@@ -61,7 +63,7 @@ CONFIGURE_ARGS +=	-Dopengl_libname=libGL.so \
 			-Dlibwacom=false \
 			-Dtests=disabled \
 			-Dprofiler=false \
-			-Dsystemd=false
+			-Dlogind=false
 
 # XXX needs libsystemd or libelogind
 CONFIGURE_ARGS +=	-Dnative_backend=false

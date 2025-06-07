@@ -1,6 +1,6 @@
 COMMENT=	proof-of-work proxy to protect web resources from scrapers
 
-V=		1.18.0
+V=		1.19.1
 DISTNAME=	anubis-src-vendor-npm-$V
 PKGNAME=	anubis-$V
 
@@ -8,6 +8,8 @@ CATEGORIES=	www
 
 HOMEPAGE=	https://anubis.techaro.lol/
 SITES=		https://github.com/TecharoHQ/anubis/releases/download/v$V/
+
+MAINTAINER=	Christoph Liebender <christoph@liebender.dev>
 
 EPOCH=		0
 
@@ -20,6 +22,9 @@ MODULES=	lang/go
 
 MODGO_LDFLAGS=	-X github.com/TecharoHQ/anubis.Version=$V
 MODGO_GO111MODULE= on
+
+# needs playwright
+NO_TEST=	Yes
 
 do-build:
 	cd ${WRKSRC} && ${MODGO_CMD} build ${MODGO_FLAGS} \

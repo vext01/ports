@@ -30,6 +30,8 @@ PKGNAME-utils =		kde-utils-${MODKDE_GEAR_VERSION}
 PKGNAME-plasma =	kde-plasma-${MODKDE_PLASMA_VERSION}
 PKGNAME-plasma-extras =	kde-plasma-extras-${MODKDE_PLASMA_VERSION}
 
+REVISION-plasma =	5
+
 MULTI_PACKAGES +=	-main \
 			-games \
 			-admin \
@@ -173,6 +175,7 @@ RUN_DEPENDS-multimedia = \
 	x11/kde-applications/audiocd-kio \
 	x11/kde-applications/dragon \
 	x11/kde-applications/elisa \
+	x11/kde-applications/kwave \
 	x11/kde-applications/ffmpegthumbs \
 	x11/kde-applications/juk \
 	x11/kde-applications/kdenlive \
@@ -189,10 +192,10 @@ RUN_DEPENDS-network = \
 	x11/kde-applications/kdenetwork-filesharing \
 	x11/kde-applications/kget \
 	x11/kde-applications/kmailtransport \
-	x11/kde-applications/krdc \
 	x11/kde-applications/tokodon
 
 # XXX x11/kde-applications/krfb
+# XXX x11/kde-applications/krdc
 
 # Not yet ported
 #x11/kde-applications/kopete
@@ -247,6 +250,8 @@ RUN_DEPENDS-utils = \
 	x11/kde-applications/kgpg \
 	x11/kde-applications/kteatime \
 	x11/kde-applications/ktimer \
+	x11/kde-applications/arianna \
+	x11/kde-applications/kongress \
 	x11/kde-applications/kwalletmanager \
 	x11/kde-applications/sweeper \
 	x11/kde-applications/markdownpart

@@ -2,14 +2,13 @@ COMMENT-main=		GNOME desktop meta-package (core installation)
 COMMENT-extras=		GNOME desktop meta-package (world installation)
 
 # sync with x11/gnome/control-center MAJOR_VERSION
-V=			47
+V=			48
 PKGNAME=		gnome-${V}
 
 PKGNAME-main=		gnome-${V}
 PKGNAME-extras=		gnome-extras-${V}
 
-REVISION-main=		0
-REVISION-extras=	1
+REVISION-main=		1
 
 MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
@@ -42,6 +41,10 @@ RUN_DEPENDS-main +=	inputmethods/ibus,-gtk4
 RUN_DEPENDS-main +=	sysutils/flatpak/xdg-desktop-portal \
 			sysutils/flatpak/xdg-desktop-portal-gnome \
 			sysutils/flatpak/xdg-desktop-portal-gtk
+
+# defaults set in gsettings-desktop-schema (not in the dep chain already):
+# org.gnome.desktop.interface.gschema.xml
+RUN_DEPENDS-main +=	fonts/adwaita-fonts # elements/sdk-platform.bst
 
 ################################################################################
 # https://gitlab.gnome.org/GNOME/gnome-build-meta/blob/master/elements/core.bst
@@ -96,37 +99,38 @@ RUN_DEPENDS-main +=	devel/gsettings-desktop-schemas \
 #RUN_DEPENDS-main +=	x11/gnome/initial-setup
 
 # https://gitlab.gnome.org/GNOME/gnome-build-meta/blob/master/elements/core/meta-gnome-core-apps.bst
-RUN_DEPENDS-main +=	x11/gnome/calculator \
+RUN_DEPENDS-main +=	evince-*-!light:graphics/evince \
+			graphics/simple-scan \
+			x11/gnome/baobab \
+			x11/gnome/calculator \
 			x11/gnome/calendar \
 			x11/gnome/characters \
 			x11/gnome/clocks \
+			x11/gnome/connections \
 			x11/gnome/console \
 			x11/gnome/contacts \
-			evince-*-!light:graphics/evince \
+			x11/gnome/decibels \
 			x11/gnome/font-viewer \
 			x11/gnome/maps \
 			x11/gnome/music \
 			x11/gnome/nautilus \
+			x11/gnome/showtime \
 			x11/gnome/system-monitor \
 			x11/gnome/text-editor \
-			x11/gnome/totem \
 			x11/gnome/weather \
 			x11/gnome/yelp
 
 # should be "loupe"
 RUN_DEPENDS-main +=	x11/gnome/eog
+RUN_DEPENDS-extras +=	x11/gnome/eog-plugins
 
 # in -extras to give users an alternative choice
-RUN_DEPENDS-extras +=	graphics/simple-scan \
-			www/epiphany \
-			x11/gnome/baobab \
-			x11/gnome/connections
+RUN_DEPENDS-extras +=	www/epiphany
 
 # https://gitlab.gnome.org/GNOME/gnome-build-meta/blob/master/elements/core/meta-gnome-core-developer-tools.bst
 RUN_DEPENDS-extras +=	sysutils/dspy \
 			x11/gnome/builder \
-			x11/gnome/dconf-editor \
-			x11/gnome/devhelp
+			x11/gnome/dconf-editor
 
 # https://gitlab.gnome.org/GNOME/gnome-build-meta/blob/master/elements/core/meta-gnome-core-mobile.bst
 #RUN_DEPENDS-extras +=
@@ -139,19 +143,22 @@ RUN_DEPENDS-extras +=	sysutils/dspy \
 ################################################################################
 
 RUN_DEPENDS-extras +=	mail/evolution \
-			x11/gnome/dictionary \
+			x11/gnome/devhelp \
 			x11/gnome/endeavour \
 			x11/gnome/file-roller,-nautilus \
 			x11/gnome/ghex \
 			x11/gnome/gitg \
 			x11/gnome/notes \
-			x11/gnome/photos \
 			x11/gnome/polari \
 			x11/gnome/seahorse \
-			x11/gnome/terminal,-nautilus \
 			x11/gnome/tweaks
 
 # depends on -main
 RUN_DEPENDS-extras +=	STEM-=${V}:${BASE_PKGPATH},-main
+
+do-install:
+	${INSTALL_DATA_DIR} ${PREFIX}/share/applications/
+	${INSTALL_DATA} ${FILESDIR}/gnome-mimeapps.list.in \
+		${PREFIX}/share/applications/gnome-mimeapps.list
 
 .include <bsd.port.mk>

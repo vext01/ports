@@ -1,8 +1,12 @@
 COMMENT=	high-performance and extensible DHCP server engine from ISC
 
-VERSION=	2.4.1
+VERSION=	2.4.2
+REVISION=	1
 PORTROACH=	limitw:1,even
-REVISION=	2
+
+# 2.6 update notes so far;
+# cvs rm -rf patches/patch-src_lib_asiolink_{io_address_cc,io_service_cc,tcp_endpoint_h,udp_endpoint_h,unix_domain_socket_cc} patches/patch-src_lib_dhcp_iface_mgr_cc
+# addPktEvent doesn't cope with openbsd nonstandard bpf_timeval
 
 DISTNAME=	kea-${VERSION}
 PKGNAME-main=	kea-${VERSION:S/-P/pl/}
@@ -11,7 +15,7 @@ PKGNAME-main=	kea-${VERSION:S/-P/pl/}
     kea-d2srv kea-database kea-dhcp++ kea-dhcp_ddns kea-dhcpsrv kea-dns++ \
     kea-eval kea-exceptions kea-hooks kea-http kea-log kea-mysql kea-pgsql \
     kea-process kea-stats kea-tcp kea-threads kea-util kea-util-io
-SHARED_LIBS +=  $i 11.0
+SHARED_LIBS +=  $i 12.0
 .endfor
 
 CATEGORIES=	net
@@ -41,7 +45,8 @@ CONFIGURE_STYLE= gnu
 CONFIGURE_ARGS+= --with-openssl=/usr \
                  --with-boost-libs=-lboost_system \
                  --with-boost-lib-dir=${LOCALBASE}/lib \
-		 --enable-generate-parser
+		 --enable-generate-parser \
+		 --enable-perfdhcp
 
 USE_GMAKE=	Yes
 LIBTOOL_FLAGS=	--tag=disable-static

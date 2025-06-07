@@ -15,10 +15,11 @@ if [ ! -d $XDG_RUNTIME_DIR ]; then
     mkdir -m 700 -p $XDG_RUNTIME_DIR
 fi
 
-export QT_FORCE_STDERR_LOGGING=1
-export XDG_CURRENT_DESKTOP=KDE
-export DESKTOP_SESSION=plasma
-${LOCALBASE}/bin/startplasma-x11 > ~/.startplasma-x11.log 2>&1
+if [ -x /usr/local/bin/dbus-launch -a -z "${DBUS_SESSION_BUS_ADDRESS}" ]; then
+    eval `dbus-launch --sh-syntax --exit-with-x11`
+fi
+
+${LOCALBASE}/bin/ck-launch-session ${LOCALBASE}/bin/startplasma-x11
 
 Logging out and shutting down the computer
 ==========================================
@@ -26,11 +27,9 @@ If your user is part of the _shutdown group and thus can execute shutdown(8),
 you should be able to shutdown/logout without further configuration.
 
 Otherwise, halting and rebooting from KDE Plasma require consolekit2 and
-polkit-kde-agent: you'll need to run a systemwide D-BUS service (# rcctl enable
-messagebus) and start with 'startplasma-x11' with
-'${LOCALBASE}/bin/ck-launch-session':
+polkit-kde-agent: you'll need to run a systemwide D-BUS service
 
-${LOCALBASE}/bin/ck-launch-session ${LOCALBASE}/bin/startplasma-x11
+# rcctl enable messagebus
 
 If you don't want to use messagebus/polkit-kde-agent, you can still configure
 doas(1) to allow your user to run shutdown/halt -p without having to enter a
@@ -45,11 +44,37 @@ proper function, it requires messagebus and upowerd running. If using
 consolekit2 and polkit-kde-agent, it will also allow you to suspend the
 laptop from the logout dialog.
 
+Resource limits
+===============
+
+The "default" login-class resource limits are too conservative for KDE Plasma
+users. It is recommended to use the login-class "kde" for all KDE Plasma
+users.
+
+Depending on the application and if KDE widgets or plasmashell (you will find a
+plasmashell.core in your $HOME) constantly crash, the value must be set
+correspondingly higher.
+
+You can easily change the login class with the following command:
+
+# usermod -L kde your-user-name
+
+You might want to consider increasing the kern.maxfiles tunable. Many services
+and applications need to monitor activity of a lot of files.
+
+# sysctl kern.maxfiles=65535
+# echo "kern.maxfiles=65535" >> /etc/sysctl.conf
+
+Touch screen calibration
+========================
+xtsscale(1) can be used for touch screen calibration, however it will not
+work under kwin, as a workaround, you can kill kwin first, calibrate your
+screen, then launch kwin_x11 again.
+
 Screen compositor
 =================
-The KDE compositor may not run properly by default. You can deactivate it
-under: "System Setting" -> "Display Configuration" -> "Compositor" or
-in `~/.config/kwinrc":
+You can deactivate the screen compositor under: "System Setting" -> "Display
+Configuration" -> "Compositor" or in `~/.config/kwinrc":
 
 [Compositing]
 Enabled=false
@@ -77,24 +102,52 @@ if [ ! -d $XDG_RUNTIME_DIR ]; then
     mkdir -m 700 -p $XDG_RUNTIME_DIR
 fi
 
+GROUP=`id -g $USER`
+
+doas chown $USER:$GROUP /dev/console
+if [ -c /dev/dri/card0 ]; then
+    doas chown $USER:$GROUP /dev/dri/card0
+fi
+if [ -c /dev/dri/renderD128 ]; then
+    doas chown $USER:$GROUP /dev/dri/renderD128
+fi
+
 # You can try and play with this options:
-#export WLR_DRM_DEVICES=/dev/dri/card0
-#export LIBSEAT_BACKEND=noop
-#export XCURSOR_THEME=redglass
+export KWIN_DRM_DEVICES=/dev/dri/card0:/dev/dri/renderD128
+export WAYLAND_DISPLAY=wayland-0
+export LIBSEAT_BACKEND=consolekit2
 #export QT_QPA_PLATFORM=wayland
 #export XDG_SESSION_TYPE=wayland
 
-${LOCALBASE}/bin/ck-launch-session dbus-run-session \
- ${LOCALBASE}/bin/startplasma-wayland
+if [ -x /usr/local/bin/dbus-launch -a -z "${DBUS_SESSION_BUS_ADDRESS}" ]; then
+	eval $(dbus-launch --sh-syntax )
+fi
+
+${LOCALBASE}/bin/ck-launch-session ${LOCALBASE}/bin/startplasma-wayland
+
+KDE PIM and Akonadi
+===================
+KDE PIM applications like Akonadi, KMail, and Kontact use large messages on the
+local machine. The default size on OpenBSD is too small, which causes local
+connection issues, and Akonadi-based applications will be flaky (e.g. mailboxes
+do not display, messages cannot be found).
+
+Increasing the buffer size is recommended:
+
+# sysctl net.unix.stream.recvspace=65536
+# echo "net.unix.stream.recvspace=65536" >> /etc/sysctl.conf
+
+# sysctl net.unix.stream.sendspace=65536
+# echo "net.unix.stream.sendspace=65536" >> /etc/sysctl.conf
 
 Known issues
 ============
 - The first start may take a little longer.
+- Touchscreen configuration does not work
 
 Not yet ported Plasma applications/plugins
 ==========================================
  - aura-browser
- - kpipewire
  - bluedevil
  - breeze-plymouth
  - discover

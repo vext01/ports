@@ -1,5 +1,13 @@
      SUBDIR =
 
+     # KDE Plasma Mobile stuff
+     #SUBDIR +=  alligator
+     #SUBDIR +=  qmlkonsole
+     #SUBDIR +=  angelfish
+     #SUBDIR +=  calindori
+     #SUBDIR +=  ktrip
+     #SUBDIR +=  keysmith
+
      # New in KDE Gear/24.12
      #SUBDIR += kunifiedpush
 
@@ -20,23 +28,18 @@
      #SUBDIR += khealthcertificate
 
      # New in KDE Gear/23.04
-     #SUBDIR +=  alligator
-     #SUBDIR +=  angelfish
      #SUBDIR +=  audiotube
-     #SUBDIR +=  calindori
      #SUBDIR +=  kalk
      #SUBDIR +=  kasts
      #SUBDIR +=  kclock
      #SUBDIR +=  kde-inotify-survey
-     #SUBDIR +=  keysmith
      #SUBDIR +=  kio-admin
      #SUBDIR +=  kjournald
      #SUBDIR +=  koko
-     #SUBDIR +=  kongress
+     SUBDIR +=  kongress
+     SUBDIR +=  arianna
      #SUBDIR +=  krecorder
-     #SUBDIR +=  ktrip
      SUBDIR +=  kweather
-     #SUBDIR +=  qmlkonsole
      #SUBDIR +=  telly-skout
 
      # accessibility
@@ -108,6 +111,7 @@
      SUBDIR += knavalbattle
      SUBDIR += knetwalk
      #SUBDIR += knights
+     #SUBDIR += kpat
      SUBDIR += kolf
      SUBDIR += kollision
      SUBDIR += konquest
@@ -143,7 +147,7 @@
      #SUBDIR += k3b
      SUBDIR += kdenlive
      SUBDIR += kmix
-     #SUBDIR += kwave
+     SUBDIR += kwave
      SUBDIR += elisa
      SUBDIR += plasmatube
 
@@ -205,20 +209,6 @@
      # webdev
      SUBDIR += kimagemapeditor
 
-     # KDE-Telepathy
-     #SUBDIR += ktp-accounts-kcm
-     #SUBDIR += ktp-approver
-     #SUBDIR += ktp-auth-handler
-     #SUBDIR += ktp-call-ui
-     #SUBDIR += ktp-common-internals
-     #SUBDIR += ktp-contact-list
-     #SUBDIR += ktp-contact-runner
-     #SUBDIR += ktp-desktop-applets
-     #SUBDIR += ktp-filetransfer-handler
-     #SUBDIR += ktp-kded-module
-     #SUBDIR += ktp-send-file
-     #SUBDIR += ktp-text-ui
-
      # development environment
      SUBDIR += akonadi
      SUBDIR += akonadi-calendar
@@ -242,8 +232,9 @@
      SUBDIR += kmbox
      SUBDIR += kopeninghours
      SUBDIR += kmime
+     SUBDIR += kpublictransport
+     SUBDIR += kosmindoormap
      SUBDIR += kontactinterface
-     #SUBDIR += kpat
      SUBDIR += kpkpass
      SUBDIR += kqtquickcharts
      SUBDIR += ksmtp
@@ -309,8 +300,9 @@
 
      # TODO
      # kosmindoormap
-     # kpmcore
      # kpublictransport
+
      # partitionmanager
+     # kpmcore
 
 .include <bsd.port.subdir.mk>

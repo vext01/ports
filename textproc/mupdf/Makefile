@@ -1,8 +1,8 @@
 COMMENT =	graphic library, pdf parser, viewer and utilities
 
-SHARED_LIBS +=  mupdf                 13.0
+SHARED_LIBS +=  mupdf                 14.0
 
-V =		1.26.0
+V =		1.26.2
 DISTNAME =	mupdf-$V-source
 PKGNAME =	mupdf-${V:S/-rc/rc/}
 
@@ -72,6 +72,8 @@ DEBUG_PACKAGES = ${BUILD_PACKAGES}
 
 .if ${FLAVOR:Mjs}
 MAKE_FLAGS +=	mujs=yes
+.else
+MAKE_FLAGS +=	mujs=no
 .endif
 
 # ld.bfd -r -b binary does not produce correct type of object.
@@ -81,7 +83,10 @@ MAKE_FLAGS +=	HAVE_OBJCOPY=no
 
 pre-configure:
 	cd ${WRKSRC}; sed -i 's,/usr/X11R6/include,${X11BASE}/include,g' Makerules Makethird
-	ln -s /bin/ksh ${WRKDIR}/bin/bash
+	ln -fs /bin/ksh ${WRKDIR}/bin/bash
+.if !${FLAVOR:Mjs}
+	rm -r ${WRKSRC}/thirdparty/mujs
+.endif
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/{applications,pixmaps}

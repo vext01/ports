@@ -19,10 +19,10 @@
      SUBDIR += contacts
      SUBDIR += control-center
      SUBDIR += dconf-editor
+     SUBDIR += decibels
      SUBDIR += desktop
      SUBDIR += devel-docs
      SUBDIR += devhelp
-     SUBDIR += dictionary
      SUBDIR += endeavour
      SUBDIR += eog
      SUBDIR += eog-plugins
@@ -72,7 +72,6 @@
      SUBDIR += notes
      SUBDIR += online-accounts
      SUBDIR += orca
-     SUBDIR += photos
      SUBDIR += polari
      SUBDIR += power-manager
      SUBDIR += py-atspi
@@ -83,6 +82,7 @@
      SUBDIR += settings-daemon
      SUBDIR += shell
      SUBDIR += shell-extensions
+     SUBDIR += showtime
      SUBDIR += sushi
      SUBDIR += system-monitor
      SUBDIR += tecla
@@ -91,13 +91,11 @@
      SUBDIR += text-editor
      SUBDIR += themes-extra
      SUBDIR += tinysparql
-     SUBDIR += totem
      SUBDIR += totem-pl-parser
      SUBDIR += tour
      SUBDIR += tweaks
      SUBDIR += usage
      SUBDIR += user-docs
-     SUBDIR += video-effects
      SUBDIR += weather
      SUBDIR += yelp
      SUBDIR += yelp-tools

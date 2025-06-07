@@ -1,7 +1,7 @@
 #! /usr/bin/perl
 
 # ex:ts=8 sw=4:
-# $OpenBSD: Quirks.pm,v 1.1720 2025/05/19 10:37:16 pvk Exp $
+# $OpenBSD: Quirks.pm,v 1.1724 2025/05/31 18:50:20 ajacoutot Exp $
 #
 # Copyright (c) 2009 Marc Espie <espie@openbsd.org>
 #
@@ -626,6 +626,7 @@ my $stem_extensions = {
 	'c-icap-urlcheck' => 'c-icap-modules',
 # 7.8
 	'coq' => 'rocq',
+	'totem' => 'showtime',
 };
 
 my $obsolete_reason = {};
@@ -1258,6 +1259,11 @@ setup_obsolete_reason(
 	3 => 'ksql',
 	3 => 'reop',
 	6 => 'py-elasticsearch-curator',
+	6 => 'py-ipython_genutils',
+# 7.8
+	6 => 'gnome-video-effects',
+	3 => 'gnome-dictionary',
+	3 => 'gnome-photos',
 );
 
 # though it's not yet used, these should be pkgnames, so that eventually

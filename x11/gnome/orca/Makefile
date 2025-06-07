@@ -1,7 +1,7 @@
 COMMENT=		assistive screen reader
 
 GNOME_PROJECT=		orca
-GNOME_VERSION=		47.4
+GNOME_VERSION=		48.1
 
 # LGPLv2
 PERMIT_PACKAGE=		Yes
@@ -10,7 +10,7 @@ MODULES=		devel/meson \
 			lang/python \
 			x11/gnome
 
-MODGNOME_TOOLS= 	gtk-update-icon-cache yelp
+MODGNOME_TOOLS= 	gtk-update-icon-cache gobject-introspection yelp
 
 BUILD_DEPENDS=		devel/py-gobject3 \
 			x11/gnome/py-atspi \

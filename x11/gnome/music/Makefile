@@ -1,8 +1,7 @@
 COMMENT=		GNOME music playing application
 
 GNOME_PROJECT=		gnome-music
-GNOME_VERSION=		47.1
-REVISION=		1
+GNOME_VERSION=		48.0
 
 HOMEPAGE=		https://apps.gnome.org/Music/
 
@@ -14,7 +13,8 @@ MODULES=		devel/dconf \
 			lang/python \
 			x11/gnome
 
-MODGNOME_TOOLS=		desktop-file-utils yelp gtk-update-icon-cache
+MODGNOME_TOOLS=		desktop-file-utils yelp gtk-update-icon-cache \
+			gobject-introspection
 
 MODGNOME_LDFLAGS=	-L${X11BASE}/lib
 

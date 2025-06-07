@@ -36,6 +36,7 @@
      SUBDIR += bubblemon-dockapp
      SUBDIR += bupstash
      SUBDIR += burp
+     SUBDIR += cdist
      SUBDIR += cdrtools
      SUBDIR += cfengine
      SUBDIR += checkbashisms
@@ -106,6 +107,7 @@
      SUBDIR += f3
      SUBDIR += fabric
      SUBDIR += facette
+     SUBDIR += fastfetch
      SUBDIR += faubackup
      SUBDIR += fclones
      SUBDIR += fd
@@ -293,6 +295,7 @@
      SUBDIR += perp
      SUBDIR += pftop
      SUBDIR += pick
+     SUBDIR += piknik
      SUBDIR += pkg_mgr
      SUBDIR += plakar
      SUBDIR += planor

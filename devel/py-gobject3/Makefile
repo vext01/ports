@@ -1,9 +1,11 @@
 COMMENT=		Python bindings for GLib and GObject
 
 GNOME_PROJECT=		pygobject
-GNOME_VERSION=		3.50.0
-MODPY_DISTV=	${GNOME_VERSION}
+GNOME_VERSION=		3.52.3
+MODPY_DISTV=		${GNOME_VERSION}
+EXTRACT_SUFX=		.tar.gz
 PKGNAME=		py3-gobject3-${GNOME_VERSION}
+
 REVISION=		0
 
 CATEGORIES=		devel
@@ -15,7 +17,7 @@ MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 # LGPLv2.1
 PERMIT_PACKAGE=		Yes
 
-WANTLIB += cairo cairo-gobject ffi girepository-1.0 glib-2.0 gobject-2.0
+WANTLIB += cairo cairo-gobject ffi girepository-2.0 glib-2.0 gobject-2.0
 
 MODULES=		devel/meson \
 			lang/python \
@@ -31,10 +33,11 @@ MODGCC4_ARCHS=		${GCC3_ARCHS} ${GCC4_ARCHS}
 
 BUILD_DEPENDS=		graphics/py-cairo
 
-LIB_DEPENDS=		devel/gobject-introspection \
+LIB_DEPENDS=		devel/glib2 \
 			graphics/cairo
 
-RUN_DEPENDS=		graphics/py-cairo
+RUN_DEPENDS=		devel/gobject-introspection \
+			graphics/py-cairo
 
 TEST_DEPENDS=		devel/py-test
 

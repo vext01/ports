@@ -264,10 +264,9 @@
      SUBDIR += povray
      SUBDIR += pqiv
      SUBDIR += pstoedit
-     SUBDIR += py2-opengl
      SUBDIR += py-Pillow
-     SUBDIR += py-blurhash
      SUBDIR += py-bdfparser
+     SUBDIR += py-blurhash
      SUBDIR += py-cairo
      SUBDIR += py-cycler
      SUBDIR += py-dot
@@ -287,7 +286,6 @@
      SUBDIR += py-termcolor
      SUBDIR += py-tifffile
      SUBDIR += py-wand
-     SUBDIR += py2-Pillow
      SUBDIR += py2-cairo
      SUBDIR += qiv
      SUBDIR += qr-code-generator

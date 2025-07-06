@@ -1,7 +1,7 @@
 COMMENT =	Firefox web browser, Extended Support Release
 ONLY_FOR_ARCHS =	amd64 aarch64 riscv64
 
-MOZILLA_VERSION =	128.11.0esr
+MOZILLA_VERSION =	128.12.0esr
 MOZILLA_BRANCH =	release
 MOZILLA_PROJECT =	firefox-esr
 MOZILLA_CODENAME =	browser
@@ -24,6 +24,13 @@ MODULES =	www/mozilla lang/python
 MODPY_RUNDEP =	No
 
 COMPILER =	ports-clang
+.if ${MACHINE_ARCH} == aarch64
+MODCLANG_VERSION =	16
+USE_LLD =		ports
+CONFIGURE_ARGS +=	--without-wasm-sandboxed-libraries
+.else
+CONFIGURE_ARGS +=	--with-wasi-sysroot=${LOCALBASE}/share/wasi-sysroot
+.endif
 
 # 63 requires node because why not #1483595
 BUILD_DEPENDS +=	lang/node
@@ -31,7 +38,6 @@ BUILD_DEPENDS +=	lang/node
 BUILD_DEPENDS +=	devel/cbindgen>=0.23.0
 # wasi
 BUILD_DEPENDS +=	lang/wasi-sdk/compiler-rt \
-			lang/wasi-sdk/libcxxabi \
 			lang/wasi-sdk/libcxx \
 			lang/wasi-libc
 # mach uses pkg_resources
@@ -48,7 +54,12 @@ CONFIGURE_SCRIPT =	${MODPY_BIN} ${WRKSRC}/configure.py
 CONFIGURE_ARGS +=	--prefix=${PREFIX}
 MAKE_ENV +=		BUILD_VERBOSE_LOG="1" CARGOFLAGS="-j${MAKE_JOBS}"
 CONFIGURE_ENV +=	CPPFLAGS=-Wno-backend-plugin
+NCPU !!=		sysctl -n hw.ncpuonline
+.if ${NCPU} > 4
+CONFIGURE_ENV +=	LDFLAGS="-Wl,--threads=5 --ld-path=${WRKDIR}/bin/ld"
+.else
 CONFIGURE_ENV +=	LDFLAGS="-Wl,--threads=${MAKE_JOBS} --ld-path=${WRKDIR}/bin/ld"
+.endif
 
 # avoid conflict with mainline firefox
 CONFIGURE_ARGS +=	--with-app-name=${MOZILLA_PROJECT}
@@ -56,7 +67,6 @@ CONFIGURE_ARGS +=	--with-app-name=${MOZILLA_PROJECT}
 CONFIGURE_ARGS +=	--enable-release #1386371
 CONFIGURE_ARGS +=	--enable-sandbox
 CONFIGURE_ARGS +=	--enable-forkserver
-CONFIGURE_ARGS +=	--with-wasi-sysroot=${LOCALBASE}/share/wasi-sysroot
 CONFIGURE_ARGS +=	--with-libclang-path=${LOCALBASE}/llvm${MODCLANG_VERSION}/lib
 # LTO eats too much RAM on riscv64
 .if ${MACHINE_ARCH} != riscv64

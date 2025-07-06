@@ -1,7 +1,7 @@
 #! /usr/bin/perl
 
 # ex:ts=8 sw=4:
-# $OpenBSD: Quirks.pm,v 1.1724 2025/05/31 18:50:20 ajacoutot Exp $
+# $OpenBSD: Quirks.pm,v 1.1729 2025/06/22 12:28:32 daniel Exp $
 #
 # Copyright (c) 2009 Marc Espie <espie@openbsd.org>
 #
@@ -627,6 +627,9 @@ my $stem_extensions = {
 # 7.8
 	'coq' => 'rocq',
 	'totem' => 'showtime',
+	'py-numpy' => 'py3-numpy',
+	'py-Pillow' => 'py3-Pillow',
+	'py-opengl' => 'py3-opengl',
 };
 
 my $obsolete_reason = {};
@@ -1257,13 +1260,16 @@ setup_obsolete_reason(
 	3 => 'pop3d',
 	3 => 'myrddin',
 	3 => 'ksql',
-	3 => 'reop',
 	6 => 'py-elasticsearch-curator',
 	6 => 'py-ipython_genutils',
 # 7.8
 	6 => 'gnome-video-effects',
 	3 => 'gnome-dictionary',
 	3 => 'gnome-photos',
+	3 => 'tsung',
+	3 => 'mysticmine',
+	3 => 'fretsonfire',
+	3 => 'py-lpsolve',
 );
 
 # though it's not yet used, these should be pkgnames, so that eventually

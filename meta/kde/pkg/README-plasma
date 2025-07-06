@@ -85,10 +85,12 @@ export KDEWM=${LOCALBASE}/bin/picom
 
 Desktop search
 ==============
-Baloo file indexer is disabled by default on OpenBSD. To enable it go to
-"Search" -> "File Search in system settings or execute:
+The auto start Baloo file indexer is disabled by default on OpenBSD. However,
+KDE Plasma automatically starts the indexer anyway. To disable it, go to
+"Search" -> "File Search" in Systemsettings, or run this command after your
+first startup:
 
-${LOCALBASE}/bin/balooctl enable
+${LOCALBASE}/bin/balooctl6 enable
 
 Wayland
 =======
@@ -161,7 +163,6 @@ Not yet ported Plasma applications/plugins
  - plasma-integration
  - plasma-mobile
  - plasma-nm
- - plasma-pa
  - plasma-remotecontrollers
  - plasma-systemmonitor
  - plasma-thunderbolt
@@ -174,7 +175,7 @@ Cheat sheet
 ===========
 # Replace plasmashell and kwin
 $ plasmashell --replace
-$ kwin --replace
+$ kwin_{x11,wayland} --replace
 
 Support
 =======

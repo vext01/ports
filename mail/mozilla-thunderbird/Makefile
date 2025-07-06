@@ -3,7 +3,7 @@ COMMENT =		Mozilla e-mail, calendar, rss and usenet client
 
 # Don't forget to bump mail/thunderbird-i18n after updates.
 
-MOZILLA_VERSION =	128.11.0esr
+MOZILLA_VERSION =	128.12.0esr
 MOZILLA_BRANCH =	release
 MOZILLA_PROJECT =	thunderbird
 MOZILLA_CODENAME =	comm/mail
@@ -32,6 +32,13 @@ MODPY_RUNDEP =	No
 
 COMPILER =	ports-clang
 MODCLANG_ARCHS =	amd64 aarch64 riscv64
+.if ${MACHINE_ARCH} == aarch64
+MODCLANG_VERSION =	16
+USE_LLD =		ports
+CONFIGURE_ARGS +=	--without-wasm-sandboxed-libraries
+.else
+CONFIGURE_ARGS +=	--with-wasi-sysroot=${LOCALBASE}/share/wasi-sysroot
+.endif
 
 # 63 requires node because why not #1483595
 BUILD_DEPENDS +=	lang/node
@@ -43,7 +50,6 @@ BUILD_DEPENDS +=	devel/nasm
 .endif
 # wasi
 BUILD_DEPENDS +=	lang/wasi-sdk/compiler-rt \
-			lang/wasi-sdk/libcxxabi \
 			lang/wasi-sdk/libcxx \
 			lang/wasi-libc
 # mach uses pkg_resources
@@ -59,7 +65,6 @@ CONFIGURE_ARGS +=	--prefix=${PREFIX}
 # pledge strings to be defined, and no multiprocess anyway..
 CONFIGURE_ARGS +=	--disable-sandbox
 CONFIGURE_ARGS +=	--with-libclang-path=${LOCALBASE}/llvm${MODCLANG_VERSION}/lib
-CONFIGURE_ARGS +=	--with-wasi-sysroot=${LOCALBASE}/share/wasi-sysroot
 # #1664111
 CONFIGURE_ARGS +=	--with-system-ffi
 # #1732809

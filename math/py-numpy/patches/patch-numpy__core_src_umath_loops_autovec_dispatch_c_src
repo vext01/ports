@@ -17,5 +17,5 @@ Index: numpy/_core/src/umath/loops_autovec.dispatch.c.src
  }
 +#pragma GCC reset_options  // Re-activate optimisations
  
- 
  /**end repeat**/
+ 

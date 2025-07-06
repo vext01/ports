@@ -1,6 +1,6 @@
 COMMENT =	Z3 theorem prover
 
-DIST_TUPLE =	github Z3Prover z3 z3-4.15.0 .
+DIST_TUPLE =	github Z3Prover z3 z3-4.15.2 .
 PKGNAME =	${DISTNAME:S/z3-//}
 
 SHARED_LIBS =	z3	4.15
@@ -17,7 +17,7 @@ MAINTAINER =	Kirill A. Korinsky <kirill@korins.ky>
 PERMIT_PACKAGE =	Yes
 
 # C++20
-COMPILER =	base-clang ports-gcc
+COMPILER =	base-clang ports-clang
 
 MODULES =	devel/cmake \
 		lang/python

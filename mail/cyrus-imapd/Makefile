@@ -2,7 +2,7 @@ PORTROACH=		limitw:1,even
 
 COMMENT=		Cyrus IMAP server
 
-V=			3.12.0
+V=			3.12.1
 DISTNAME=		cyrus-imapd-${V}
 
 SHARED_LIBS +=  cyrus_min            0.0      # unknown
@@ -22,7 +22,7 @@ PERMIT_PACKAGE=		Yes
 WANTLIB += ${COMPILER_LIBCXX} brotlicommon brotlienc c com_err
 WANTLIB += crypto db db_cxx execinfo ical icalss icalvcal iconv
 WANTLIB += icudata icui18n icuuc jansson lzma m nghttp2 pcre2-8
-WANTLIB += pcre2-posix perl sasl2 sqlite3 srs2 ssl uuid wslay
+WANTLIB += pcre2-posix perl sasl2 shp sqlite3 srs2 ssl uuid wslay
 WANTLIB += xapian xml2 z zstd
 
 SITES=			https://github.com/cyrusimap/cyrus-imapd/releases/download/cyrus-imapd-${V}/
@@ -42,6 +42,7 @@ LIB_DEPENDS=		archivers/brotli \
 			databases/xapian-core \
 			devel/jansson \
 			devel/pcre2 \
+			devel/shapelib \
 			mail/libsrs2 \
 			security/cyrus-sasl2 \
 			sysutils/e2fsprogs \

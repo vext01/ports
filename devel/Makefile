@@ -355,8 +355,8 @@
      SUBDIR += libusb1,debug
      SUBDIR += libuv
      SUBDIR += libvirt-glib
-     SUBDIR += libvolk
      SUBDIR += libvmime
+     SUBDIR += libvolk
      SUBDIR += libvterm
      SUBDIR += libwnck3
      SUBDIR += libxsvf
@@ -508,6 +508,7 @@
      SUBDIR += p5-Alien-wxWidgets
      SUBDIR += p5-Any-Moose
      SUBDIR += p5-AnyEvent
+     SUBDIR += p5-AnyEvent-Connector
      SUBDIR += p5-AnyEvent-HTTP
      SUBDIR += p5-App-CLI
      SUBDIR += p5-App-Cmd
@@ -913,8 +914,10 @@
      SUBDIR += p5-Module-Build
      SUBDIR += p5-Module-Build-Pluggable
      SUBDIR += p5-Module-Build-Pluggable-PPPort
+     SUBDIR += p5-Module-Build-Prereqs-FromCPANfile
      SUBDIR += p5-Module-Build-Tiny
      SUBDIR += p5-Module-Build-XSUtil
+     SUBDIR += p5-Module-CPANfile
      SUBDIR += p5-Module-Find
      SUBDIR += p5-Module-Implementation
      SUBDIR += p5-Module-Install
@@ -1041,6 +1044,7 @@
      SUBDIR += p5-PerlIO-via-Timeout
      SUBDIR += p5-PerlIO-via-dynamic
      SUBDIR += p5-PerlIO-via-symlink
+     SUBDIR += p5-PerlX-Maybe
      SUBDIR += p5-Pod-Constant
      SUBDIR += p5-Pod-Coverage
      SUBDIR += p5-Pod-ToDemo
@@ -1354,6 +1358,7 @@
      SUBDIR += py-anytree
      SUBDIR += py-apipkg
      SUBDIR += py-appdirs
+     SUBDIR += py-application_properties
      SUBDIR += py-argcomplete
      SUBDIR += py-argh
      SUBDIR += py-arrow
@@ -1375,6 +1380,7 @@
      SUBDIR += py-backcall
      SUBDIR += py-bencode
      SUBDIR += py-beniget
+     SUBDIR += py-billiard
      SUBDIR += py-binaryornot
      SUBDIR += py-biplist
      SUBDIR += py-bitarray
@@ -1442,6 +1448,7 @@
      SUBDIR += py-dirty-equals
      SUBDIR += py-dispatcher
      SUBDIR += py-distutils-extra
+     SUBDIR += py-docker
      SUBDIR += py-docopt
      SUBDIR += py-docstring-to-markdown
      SUBDIR += py-doit
@@ -1691,11 +1698,13 @@
      SUBDIR += py-test-astropy-header
      SUBDIR += py-test-asyncio
      SUBDIR += py-test-benchmark
+     SUBDIR += py-test-celery
      SUBDIR += py-test-check
      SUBDIR += py-test-codspeed
      SUBDIR += py-test-console-scripts
      SUBDIR += py-test-cov
      SUBDIR += py-test-datafiles
+     SUBDIR += py-test-docker-tools
      SUBDIR += py-test-doctestplus
      SUBDIR += py-test-expect
      SUBDIR += py-test-filter-subpackage
@@ -1708,12 +1717,12 @@
      SUBDIR += py-test-lazy-fixture
      SUBDIR += py-test-localserver
      SUBDIR += py-test-mock
-     SUBDIR += py-test-order
      SUBDIR += py-test-openfiles
+     SUBDIR += py-test-order
      SUBDIR += py-test-relaxed
      SUBDIR += py-test-remotedata
-     SUBDIR += py-test-runner
      SUBDIR += py-test-run-parallel
+     SUBDIR += py-test-runner
      SUBDIR += py-test-subtesthack
      SUBDIR += py-test-subtests
      SUBDIR += py-test-timeout
@@ -1757,6 +1766,7 @@
      SUBDIR += py-validators
      SUBDIR += py-vcversioner
      SUBDIR += py-versioneer
+     SUBDIR += py-vine
      SUBDIR += py-virtualenv
      SUBDIR += py-voluptuous
      SUBDIR += py-vulture
@@ -1789,8 +1799,8 @@
      SUBDIR += pygame
      SUBDIR += pylint
      SUBDIR += pystring			# not python ;)
-     SUBDIR += pyusb
      SUBDIR += pyupgrade
+     SUBDIR += pyusb
      SUBDIR += qbs
      SUBDIR += qcoro
      SUBDIR += qgit
@@ -1806,7 +1816,6 @@
      SUBDIR += rcs-fast-import
      SUBDIR += re2c
      SUBDIR += readline
-     SUBDIR += rebar3,erlang25
      SUBDIR += rebar3,erlang26
      SUBDIR += rebar3,erlang27
      SUBDIR += rebar3,erlang28
@@ -1839,6 +1848,7 @@
      SUBDIR += ruby-get_process_mem
      SUBDIR += ruby-gettext
      SUBDIR += ruby-gettext-setup
+     SUBDIR += ruby-google-protobuf
      SUBDIR += ruby-highline
      SUBDIR += ruby-hitimes
      SUBDIR += ruby-hocon
@@ -1977,6 +1987,7 @@
      SUBDIR += utfcpp
      SUBDIR += uthash
      SUBDIR += uuid
+     SUBDIR += uv
      SUBDIR += valgrind
      SUBDIR += vanessa
      SUBDIR += vim-command-t

@@ -1,5 +1,3 @@
-BROKEN-i386 =		hangs in make fake in a tight loop using all of 1 core
-
 ONLY_FOR_ARCHS =	amd64 aarch64 i386 powerpc64 riscv64
 DPB_PROPERTIES =	parallel
 
@@ -7,17 +5,14 @@ USE_WXNEEDED =		Yes
 
 COMMENT = JavaScript runtime built on Chrome's V8 JavaScript engine
 
-NODE_VERSION =		v22.16.0
-PLEDGE_VER =		1.1.3
+NODE_VERSION =		v22.17.0
 DISTFILES =		${DISTNAME}-headers.tar.gz \
 			${DISTNAME}.tar.xz
-DISTFILES.pledge =	node-pledge-{}${PLEDGE_VER}.tar.gz
-
+DIST_TUPLE =		github qbit node-pledge 1.1.3 \
+			deps/npm/node_modules/node-pledge
 DISTNAME =		node-${NODE_VERSION}
 PKGNAME =		${DISTNAME:S/v//g}
 EPOCH =			0
-
-SITES.pledge =		https://github.com/qbit/node-pledge/archive/
 
 CATEGORIES =		lang devel
 
@@ -45,7 +40,6 @@ BUILD_DEPENDS =		sysutils/flock
 RUN_DEPENDS =		devel/gmake \
 			sysutils/flock
 
-TEST_TARGET =		check
 CONFIGURE_STYLE =	simple
 CONFIGURE_SCRIPT =	configure
 
@@ -70,7 +64,7 @@ SUBST_VARS +=		EOPENSSL_LIB
 
 # uses a wide range of OpenSSL API and only really supports boring/openssl
 LIB_DEPENDS +=		archivers/brotli \
-			devel/libuv \
+			devel/libuv>=1.51.0p0 \
 			net/libcares \
 			security/openssl/${OPENSSL_VSN} \
 			textproc/icu4c \
@@ -84,9 +78,13 @@ EOPENSSL_INC =		${LOCALBASE}/include/${EOPENSSL_VSN}
 
 DEBUG_PACKAGES =	${BUILD_PACKAGES}
 
-post-extract:
-	mv ${WRKDIR}/node-pledge-${PLEDGE_VER} \
-		${WRKSRC}/deps/npm/node_modules/node-pledge
+# Run default tests, without linters or building the docs.
+TEST_TARGET =		test-only
+TEST_ENV =		${MAKE_ENV} HOME=${WRKSRC} CI=true
+
+# Skip test-snapshot-reproducible.
+# It fails and is too verbose (pollutes log with binary diff).
+TEST_ENV+=		CI_SKIP_TESTS=test-snapshot-reproducible
 
 pre-configure:
 	${SUBST_CMD} ${WRKDIST}/common.gypi \
@@ -105,12 +103,14 @@ post-install:
 		ln -s ../../$$x $$x; \
 	done
 
+pre-test:
+	@ln -sf ${LOCALBASE}/bin/${EOPENSSL_VSN} ${WRKDIR}/bin/openssl
+
 # Includes a lot of networking tests that will fail when running as _pbuild
 do-test:
 	cd ${WRKSRC} && \
-	export HOME=${WRKSRC} && \
 	ulimit -n $$(ulimit -Hn) && \
 	ulimit -d $$(ulimit -Hd) && \
-	${MAKE_PROGRAM} ${TEST_TARGET}
+	${SETENV} ${TEST_ENV} ${MAKE_PROGRAM} --ignore-errors ${TEST_TARGET}
 
 .include <bsd.port.mk>

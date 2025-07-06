@@ -55,7 +55,6 @@ SUBST_VARS +=	ERL_${_n:S/_VSN//}
 
 COMPILER=	base-clang ports-gcc
 
-
 UPDATE_PLIST_ARGS+= -i MAJ_V
 ERLANG_V= 	erlang${MAJ_V}
 SUBST_VARS+=	ERLANG_V MAJ_V V
@@ -66,13 +65,6 @@ TEST_DEPENDS =	archivers/gtar
 
 # special cases
 ERL_EI=			erl_interface-${EI_VSN}
-ERL_COSEVENT=		cosEvent-${COSEVENT_VSN}
-ERL_COSEVENTDOMAIN=	cosEventDomain-${COSEVENTDOMAIN_VSN}
-ERL_COSFILETRANSFER=	cosFileTransfer-${COSFILETRANSFER_VSN}
-ERL_COSNOTIFICATION=	cosNotification-${COSNOTIFICATION_VSN}
-ERL_COSPROPERTY=	cosProperty-${COSPROPERTY_VSN}
-ERL_COSTIME=		cosTime-${COSTIME_VSN}
-ERL_COSTRANSACTIONS=	cosTransactions-${COSTRANSACTIONS_VSN}
 
 # Special maintainer target, scan through vsn.mk files and build 'ERL_VERSIONS'
 # list
@@ -89,13 +81,8 @@ pre-configure:
 		     ${WRKSRC}/erts/etc/common/erlc.c \
 		     ${WRKSRC}/erts/etc/common/escript.c \
 		     ${WRKSRC}/erts/etc/common/typer.c
-.if ${MAJ_V} == 25
-	${SUBST_CMD} ${WRKSRC}/lib/dialyzer/src/dialyzer_plt.erl
-.else
 	${SUBST_CMD} ${WRKSRC}/lib/dialyzer/src/dialyzer_cplt.erl
-.endif
 	if [ -f ${WRKSRC}/lib/wx/configure.ac ]; then ${SUBST_CMD} ${WRKSRC}/lib/wx/configure.ac ; fi;
-
 
 pre-test:
 	ln -fs ${LOCALBASE}/bin/gtar ${WRKDIR}/bin/tar && \

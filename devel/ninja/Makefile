@@ -11,13 +11,14 @@ GH_TAGNAME =		v1.11.1
 # chromium (at least as of 20250218) fails with 1.12.0/1.12.1:
 # In file included from ../../net/dns/dns_config_service_posix.cc:44:
 # ../../sandbox/policy/switches.h:12:10: fatal error: 'services/screen_ai/buildflags/buildflags.h' file not found
+# qt6/qtwebengine and iridium had similar build issues with 1.13.0
 REVISION =		0
 
 CATEGORIES =		devel
 
 HOMEPAGE =		https://ninja-build.org/
 
-EPOCH =			0
+EPOCH =			1
 
 # Apache License v2.0
 PERMIT_PACKAGE =	Yes

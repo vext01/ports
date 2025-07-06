@@ -1,10 +1,13 @@
+# static link, need bump on update:
+# security/sslscan
+
 .if ${MACHINE_ARCH} != aarch64 && ${MACHINE_ARCH} != amd64 && ${MACHINE_ARCH} != riscv64
 USE_NOEXECONLY =	Yes
 .endif
 
 # skip PORTROACH limit for newest version
 #PORTROACH=	limit:^3\.2
-V=		3.5.0
+V=		3.5.1
 PKGNAME=	openssl-${V}
 PKGSPEC=	openssl->=3.5v0,<3.6v0
 EPOCH=		0
@@ -13,7 +16,10 @@ SHLIBVER=	37.0
 SHARED_LIBS=	crypto ${SHLIBVER} \
 		ssl ${SHLIBVER}
 
-WANTLIB=	c
+COMPILER=	base-clang ports-gcc
+COMPILER_LANGS=	c
+
+WANTLIB=	c pthread
 
 DEBUG_PACKAGES = ${BUILD_PACKAGES}
 
@@ -21,7 +27,7 @@ CONFIGURE_STYLE=	simple
 CONFIGURE_SCRIPT=	config
 CONFIGURE_ARGS+=	--prefix=${PREFIX} \
 			--openssldir=/etc/ssl \
-			no-threads no-rc5 no-ssl3 \
+			no-rc5 no-ssl3 \
 			no-devcryptoeng \
 			shared
 

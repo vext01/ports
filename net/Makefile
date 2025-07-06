@@ -79,6 +79,7 @@
      SUBDIR += dnsreflector
      SUBDIR += dnstop
      SUBDIR += dnstracer
+     SUBDIR += dnsviz
      SUBDIR += doc
      SUBDIR += dog
      SUBDIR += doh
@@ -311,7 +312,6 @@
      SUBDIR += neon
      SUBDIR += nepim
      SUBDIR += net-snmp
-     SUBDIR += nheko
      SUBDIR += netatalk3
      SUBDIR += netbsd-iscsi-target
      SUBDIR += netfwd
@@ -326,6 +326,7 @@
      SUBDIR += ngircd,ident
      SUBDIR += ngrep
      SUBDIR += ngtcp2
+     SUBDIR += nheko
      SUBDIR += nicotine-plus
      SUBDIR += nload
      SUBDIR += nmap
@@ -353,9 +354,9 @@
      SUBDIR += onionshare
      SUBDIR += openconnect
      SUBDIR += openconnect,light
-     SUBDIR += openrdap
      SUBDIR += openfire
      SUBDIR += openmdns
+     SUBDIR += openrdap
      SUBDIR += openvmps
      SUBDIR += openvpn
      SUBDIR += openvpn,mbedtls
@@ -366,6 +367,7 @@
      SUBDIR += owamp
      SUBDIR += owncloudclient
      SUBDIR += p5-AnyEvent-IRC
+     SUBDIR += p5-AnyEvent-WebSocket-Client
      SUBDIR += p5-BSD-Socket-Splice
      SUBDIR += p5-Bot-BasicBot
      SUBDIR += p5-Business-PayPal
@@ -564,6 +566,7 @@
      SUBDIR += py-IOSXR
      SUBDIR += py-IP
      SUBDIR += py-aiodns
+     SUBDIR += py-amqp
      SUBDIR += py-anyio
      SUBDIR += py-apprise
      SUBDIR += py-b2sdk
@@ -574,7 +577,6 @@
      SUBDIR += py-cymruwhois
      SUBDIR += py-dns			# py2
      SUBDIR += py-dnslib
-     SUBDIR += py2-dnspython
      SUBDIR += py-dnspython
      SUBDIR += py-dpkt
      SUBDIR += py-eapi
@@ -589,11 +591,13 @@
      SUBDIR += py-impacket
      SUBDIR += py-irclib
      SUBDIR += py-junos-eznc
+     SUBDIR += py-kombu
      SUBDIR += py-libcloud
      SUBDIR += py-libknot
      SUBDIR += py-lxmf
      SUBDIR += py-minimalmodbus
      SUBDIR += py-modbus
+     SUBDIR += py-moto
      SUBDIR += py-msgpack
      SUBDIR += py-nbxmpp
      SUBDIR += py-ncclient
@@ -639,6 +643,7 @@
      SUBDIR += py-wsproto
      SUBDIR += py-zeroconf
      SUBDIR += py-zmq
+     SUBDIR += py2-dnspython
      SUBDIR += qbittorrent
      SUBDIR += quagga
      SUBDIR += queryperf
@@ -665,6 +670,8 @@
      SUBDIR += ruby-connection_pool
      SUBDIR += ruby-eventmachine,ruby33
      SUBDIR += ruby-eventmachine,ruby34
+     SUBDIR += ruby-googleapis-common-protos-types
+     SUBDIR += ruby-grpc
      SUBDIR += ruby-msgpack,ruby33
      SUBDIR += ruby-msgpack,ruby34
      SUBDIR += ruby-net-telnet

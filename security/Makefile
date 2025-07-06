@@ -33,6 +33,7 @@
      SUBDIR += crowdsec
      SUBDIR += crowdsec-firewall-bouncer
      SUBDIR += cvechecker
+     SUBDIR += cyberchef
      SUBDIR += cyrus-sasl-xoauth2
      SUBDIR += cyrus-sasl2
      SUBDIR += cyrus-sasl2,db4
@@ -248,6 +249,7 @@
      SUBDIR += pdf-parser
      SUBDIR += pdfcrack
      SUBDIR += pdfid
+     SUBDIR += pebble
      SUBDIR += pecl-mcrypt,php82
      SUBDIR += pecl-mcrypt,php83
      #SUBDIR += pecl-mcrypt,php84
@@ -302,6 +304,7 @@
      SUBDIR += py-josepy
      SUBDIR += py-keyring
      SUBDIR += py-krb5
+     SUBDIR += py-kyber
      SUBDIR += py-libnacl
      SUBDIR += py-miasm
      SUBDIR += py-mitmproxy_rs
@@ -342,6 +345,7 @@
      SUBDIR += reaver
      SUBDIR += recon-ng
      SUBDIR += regripper
+     SUBDIR += reop
      SUBDIR += rhash
      SUBDIR += rnp
      SUBDIR += routersploit

@@ -74,6 +74,7 @@
      SUBDIR += cromagrally
      SUBDIR += crossfire-client
      SUBDIR += csmash
+     SUBDIR += cubiomes-viewer
      SUBDIR += dangerdeep
      SUBDIR += dd2
      SUBDIR += defendguin
@@ -130,7 +131,6 @@
      SUBDIR += freeorion
      SUBDIR += freeserf
      SUBDIR += freesynd
-     SUBDIR += fretsonfire
      SUBDIR += frotz
      SUBDIR += frozen-bubble
      SUBDIR += fs2open
@@ -218,7 +218,6 @@
      SUBDIR += moria
      SUBDIR += multimc
      SUBDIR += mvdsv
-     SUBDIR += mysticmine
      SUBDIR += naev
      SUBDIR += nanosaur
      SUBDIR += nanosaur2
@@ -281,8 +280,8 @@
      SUBDIR += renpy
      SUBDIR += returntotheroots
      SUBDIR += rftg
-     SUBDIR += rigg
      SUBDIR += ri-li
+     SUBDIR += rigg
      SUBDIR += roadfighter
      SUBDIR += rocksndiamonds
      SUBDIR += sauerbraten

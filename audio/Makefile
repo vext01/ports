@@ -15,6 +15,7 @@
      SUBDIR += calf
      SUBDIR += cantata
      SUBDIR += caps-plugins
+     SUBDIR += cassette
      SUBDIR += cd-discid
      SUBDIR += cdparanoia
      SUBDIR += celt
@@ -62,6 +63,7 @@
      SUBDIR += hydrogen
      SUBDIR += id3ed
      SUBDIR += id3lib
+     SUBDIR += iir1
      SUBDIR += jack
      SUBDIR += keyfinder-cli
      SUBDIR += ladspa
@@ -229,6 +231,7 @@
      SUBDIR += sidplay
      SUBDIR += siren
      SUBDIR += snack
+     SUBDIR += sndiortp
      SUBDIR += solfege
      SUBDIR += sonata
      SUBDIR += sound-theme-freedesktop

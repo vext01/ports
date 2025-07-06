@@ -89,9 +89,9 @@
      SUBDIR += p5-Business-Hours
      SUBDIR += p5-Chart-Math-Axis
      SUBDIR += p5-Data-PowerSet
-     SUBDIR += p5-GraphViz
      SUBDIR += p5-Graph-Easy
      SUBDIR += p5-Graph-Easy-As_svg
+     SUBDIR += p5-GraphViz
      SUBDIR += p5-Math-Base36
      SUBDIR += p5-Math-Base85
      SUBDIR += p5-Math-BaseCnv
@@ -149,6 +149,7 @@
      SUBDIR += py-osqp
      SUBDIR += py-pandas
      SUBDIR += py-patsy
+     SUBDIR += py-pygraphviz
      SUBDIR += py-pysmt
      SUBDIR += py-scikit-image
      SUBDIR += py-scikit-learn
@@ -157,7 +158,6 @@
      SUBDIR += py-snuggs
      SUBDIR += py-sympy
      SUBDIR += py-tables
-     SUBDIR += py2-numpy
      SUBDIR += qhull
      SUBDIR += qrupdate
      SUBDIR += rocq

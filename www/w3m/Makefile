@@ -1,7 +1,7 @@
 COMMENT=	pager/text-based web browser
 
-DIST_TUPLE=	srht rkta w3m 32193d61e3938518c0d454022d165b236f26f153 .
-PKGNAME=	w3m-0.5.3pl20250306
+DIST_TUPLE=	srht rkta w3m v0.5.4 .
+WRKDIST=	${WRKDIR}/w3m-v0.5.4
 
 CATEGORIES=	www
 
@@ -12,7 +12,7 @@ HOMEPAGE=	https://sr.ht/~rkta/w3m
 # BSD-like
 PERMIT_PACKAGE=	Yes
 
-WANTLIB=	c crypto curses gc iconv intl m ssl z
+WANTLIB=	c crypto curses gc iconv intl m pthread ssl z
 
 BUILD_DEPENDS=	devel/gettext,-tools
 DEBUG_PACKAGES=	${BUILD_PACKAGES}
@@ -26,7 +26,7 @@ LIB_DEPENDS=	devel/boehm-gc \
 FLAVORS=	image
 FLAVOR?=
 
-CONFIGURE_STYLE=gnu
+CONFIGURE_STYLE= gnu
 CONFIGURE_ARGS=	--disable-xface \
 		--with-termlib=curses \
 		--with-gc=${LOCALBASE}

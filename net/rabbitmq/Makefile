@@ -1,6 +1,6 @@
 COMMENT =	highly reliable Enterprise Messaging System
 
-V =		4.1.2
+V =		4.1.3
 DISTNAME =	rabbitmq-server-${V}
 PKGNAME =	rabbitmq-${V}
 CATEGORIES =	net
@@ -71,7 +71,7 @@ OBSERVER_CLI_VSN	1.8.2 \
 OSIRIS_VSN	1.8.6 \
 PROMETHEUS_VSN	4.11.0 \
 QUANTILE_ESTIMATOR_VSN	0.2.1 \
-RA_VSN		2.16.11 \
+RA_VSN		2.16.12 \
 RECON_VSN	2.5.6 \
 REDBUG_VSN	2.1.0 \
 SESHAT_VSN	0.6.1 \
@@ -95,7 +95,7 @@ pre-build:
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/{doc,examples}/rabbitmq \
-	    ${PREFIX}/share/bash-completions/completions \
+	    ${PREFIX}/share/bash-completion/completions \
 	    ${PREFIX}/share/zsh/site-functions
 	cd ${WRKBUILD}/deps/rabbit/docs && \
 	    ${INSTALL_DATA} *.8 ${PREFIX}/man/man8/ && \
@@ -110,7 +110,7 @@ post-install:
 	sed -i 's,/usr/lib/rabbitmq/bin/rabbitmqctl,${PREFIX}/bin/rabbitmqctl,g' \
 	    ${PREFIX}/autocomplete/bash_autocomplete.sh
 	mv ${PREFIX}/autocomplete/bash_autocomplete.sh \
-	    ${PREFIX}/share/bash-completions/completions/rabbitmq
+	    ${PREFIX}/share/bash-completion/completions/rabbitmq
 	mv ${PREFIX}/autocomplete/zsh_autocomplete.sh \
 	    ${PREFIX}/share/zsh/site-functions/_rabbitmq
 	rm -r ${PREFIX}/autocomplete

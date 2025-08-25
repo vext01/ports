@@ -1,6 +1,7 @@
 COMMENT=	GNU Bourne Again Shell
 
-DISTNAME=	bash-5.2.37
+DISTNAME=	bash-5.3
+PKGNAME=	bash-5.3.3
 CATEGORIES=	shells
 HOMEPAGE=	https://www.gnu.org/software/bash/
 
@@ -10,20 +11,20 @@ MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 PERMIT_PACKAGE=	Yes
 
 SITES=		${SITE_GNU:=bash/}
-SITES.p=	${SITE_GNU:=bash/bash-5.2-patches/}
+SITES.p=	${SITE_GNU:=bash/bash-5.3-patches/}
 DIST_SUBDIR=	bash
-.for i in
-PATCHFILES.p +=	bash52-$i
+# 5.3 was re-rolled
+DISTFILES=	bash-5.3-0{bash-5.3}.tar.gz
+.for i in 001 002 003
+PATCHFILES.p +=	bash53-$i
 .endfor
 
 LIB_DEPENDS=	devel/gettext,-runtime
-WANTLIB=	c curses iconv intl
+WANTLIB=	c curses iconv intl m pthread
 
 DEBUG_PACKAGES=	${BUILD_PACKAGES}
 
 CFLAGS+=	-Wno-parentheses
-# 5.3 will have prototypes
-CFLAGS+=	-Wno-deprecated-non-prototype
 
 ALL_TARGET=	all loadables
 CONFIGURE_STYLE=gnu

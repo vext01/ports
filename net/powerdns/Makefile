@@ -3,7 +3,7 @@ COMMENT-mysql=		MySQL database access module for PowerDNS
 COMMENT-pgsql=		PostgreSQL database access module for PowerDNS
 COMMENT-ldap=		LDAP database access module for PowerDNS
 
-V=			4.9.4
+V=			4.9.8
 DISTNAME=		pdns-${V}
 EXTRACT_SUFX =		.tar.bz2
 PKGNAME-main=		powerdns-${V}
@@ -31,6 +31,7 @@ WANTLIB += crypto m pthread ssl ${COMPILER_LIBCXX}
 WANTLIB-main += ${WANTLIB}
 WANTLIB-main += boost_program_options-mt c curl nghttp2 sodium
 WANTLIB-main += sqlite3 yaml-cpp z
+WANTLIB-main += nghttp3 ngtcp2 ngtcp2_crypto_quictls
 
 SITES=			https://downloads.powerdns.com/releases/
 MAINTAINER=		Otto Moerbeek <otto@drijf.net>

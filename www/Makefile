@@ -65,7 +65,6 @@
      SUBDIR += http_ping
      SUBDIR += httrack
      SUBDIR += hugo
-     SUBDIR += icedtea-web
      SUBDIR += igal
      SUBDIR += igal2
      SUBDIR += internetarchive
@@ -160,6 +159,7 @@
      SUBDIR += p5-CGI-Untaint
      SUBDIR += p5-CGI-XMLApplication
      SUBDIR += p5-CSS-DOM
+     SUBDIR += p5-CSS-Inliner
      SUBDIR += p5-CSS-Minifier
      SUBDIR += p5-CSS-Minifier-XS
      SUBDIR += p5-CSS-Squish
@@ -256,6 +256,7 @@
      SUBDIR += p5-HTML-PopupTreeSelect
      SUBDIR += p5-HTML-PrettyPrinter
      SUBDIR += p5-HTML-Prototype
+     SUBDIR += p5-HTML-Query
      SUBDIR += p5-HTML-Quoted
      SUBDIR += p5-HTML-ResolveLink
      SUBDIR += p5-HTML-RewriteAttributes
@@ -433,6 +434,7 @@
      SUBDIR += py-browser-cookie3
      SUBDIR += py-cheroot
      SUBDIR += py-cookies
+     SUBDIR += py-fastapi
      SUBDIR += py-feedgenerator
      SUBDIR += py-flasgger
      SUBDIR += py-flask
@@ -495,6 +497,7 @@
      SUBDIR += py-respx
      SUBDIR += py-selenium
      SUBDIR += py-soupsieve
+     SUBDIR += py-starlette
      SUBDIR += py-spotipy
      SUBDIR += py-tempita
      SUBDIR += py-terminado

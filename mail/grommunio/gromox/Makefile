@@ -4,8 +4,7 @@ ONLY_FOR_ARCHS=	${LLD_ARCHS}
 COMMENT-main=	groupware server backend with RPC, IMAP, POP3 support
 COMMENT-mapi=	gromox MAPI extensions for PHP
 
-V=		2.46
-REVISION=	0
+V=		2.47
 
 # required for mime.types
 MAILCAP_V=	2-1-54
@@ -17,7 +16,7 @@ PKGNAME-mapi=	gromox-mapi-${V}
 
 GH_ACCOUNT=	grommunio
 GH_PROJECT=	gromox
-GH_COMMIT=	275a7d1b2969c37cc0a9e70ffc6a0217395119a4
+GH_COMMIT=	e4156fb0be5d6416a2855f3e2e5dc03d217d6730
 
 SITES.a=	https://pagure.io/mailcap/archive/r${MAILCAP_V}/
 DISTFILES.a=	mailcap-r${MAILCAP_V}.tar.gz
@@ -70,9 +69,9 @@ BUILD_DEPENDS=	devel/cppunit \
 		shells/bash \
 		sysutils/coreutils
 
-WANTLIB += HX iconv jsoncpp m pthread tinyxml2 vmime zstd
+WANTLIB += ${COMPILER_LIBCXX} HX iconv jsoncpp m pthread tinyxml2 vmime zstd
 
-WANTLIB-main += ${COMPILER_LIBCXX} ${WANTLIB} c cares crypto curl fmt icudata icuuc
+WANTLIB-main += ${WANTLIB} c cares crypto curl fmt icudata icuuc
 WANTLIB-main += lber ldap lzma mariadb nghttp2 nghttp3 ngtcp2 ngtcp2_crypto_quictls
 WANTLIB-main += sasl2 sqlite3 ssl ssl xml2 xxhash z
 
@@ -96,7 +95,7 @@ LIB_DEPENDS-main=	archivers/zstd \
 			textproc/tinyxml2
 
 WANTLIB-mapi += ${WANTLIB} HX crypto fmt gromox_common
-WANTLIB-mapi += gromox_mapi lzma m sqlite3 ssl xml2 z
+WANTLIB-mapi += gromox_mapi m sqlite3 ssl xml2
 
 LIB_DEPENDS-mapi=	${BASE_PKGPATH}>=${V} \
 			archivers/zstd \

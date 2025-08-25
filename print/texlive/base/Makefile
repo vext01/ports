@@ -11,6 +11,8 @@ COMMENT-synctex =	synctex for TeXLive typesetting distribution
 DISTNAME =		texlive-${V}.2-source
 PKGNAME =		texlive_base-${V}
 
+REVISION-main =		0
+
 MULTI_PACKAGES =	-main -mktexlsr -synctex
 PKGNAME-mktexlsr =	texlive_mktexlsr-${V}
 PKGNAME-main =		${PKGNAME}

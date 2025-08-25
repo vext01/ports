@@ -1,7 +1,6 @@
 COMMENT =	multilingual text processing library
 
-DISTNAME =	m17n-lib-${M17N_V}
-REVISION =	3
+DISTNAME =	m17n-lib-1.8.6
 
 SHARED_LIBS +=  m17n-core            0.0      # 4.2
 SHARED_LIBS +=  m17n                 0.0      # 4.2
@@ -14,6 +13,7 @@ WANTLIB += ${COMPILER_LIBCXX}
 WANTLIB += ICE SM X11 Xau Xaw Xdmcp Xext Xft Xmu Xpm Xrender Xt anthy
 WANTLIB += anthydic c expat fontconfig freetype fribidi gd iconv intl
 WANTLIB += jpeg lzma m otf png pthread tiff webp xcb xml2 z zstd
+WANTLIB += Lerc sharpyuv
 
 LIB_DEPENDS =	devel/gettext,-runtime \
 		devel/libotf \
@@ -23,13 +23,15 @@ LIB_DEPENDS =	devel/gettext,-runtime \
 		textproc/libxml
 
 BUILD_DEPENDS =	devel/gettext,-tools \
+		inputmethods/anthy \
 		textproc/ispell \
-		misc/m17n/db=${M17N_V}
+		misc/m17n/db
 
-RUN_DEPENDS =	misc/m17n/db=${M17N_V}
+RUN_DEPENDS =	misc/m17n/db
 
 CONFIGURE_ENV =	CPPFLAGS="-I${X11BASE}/include -I${LOCALBASE}/include" \
-		LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib ${LDFLAGS}"
+		LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib ${LDFLAGS}" \
+		ac_cv_prog_INTLBISON=
 LIBTOOL_FLAGS =	--tag=disable-static
 SEPARATE_BUILD = Yes
 

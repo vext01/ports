@@ -50,7 +50,7 @@ LIB_DEPENDS =	devel/kf6/kauth \
 		devel/kf6/kguiaddons \
 		devel/kf6/kxmlgui \
 		devel/kf6/solid \
-		devel/qcoro,qt6 \
+		devel/qcoro \
 		sysutils/libudev-openbsd \
 		wayland/wayland \
 		x11/kde-plasma/libkscreen>=${VERSION} \

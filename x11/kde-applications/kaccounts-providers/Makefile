@@ -1,6 +1,7 @@
 COMMENT =	online account providers for the KAccounts system
 
 DISTNAME =	kaccounts-providers-${VERSION}
+REVISION =	1
 
 CATEGORIES =	net devel
 
@@ -21,8 +22,8 @@ LIB_DEPENDS =	devel/kf6/kcoreaddons \
 		devel/kf6/ki18n \
 		devel/kf6/kio \
 		devel/kf6/kpackage \
-		devel/qcoro,qt6 \
-		net/libaccounts-qt,qt6 \
+		devel/qcoro \
+		net/libaccounts-qt \
 		x11/kde-applications/kf6-kaccounts-integration>=${VERSION} \
 		x11/qt6/qtdeclarative \
 		x11/qt6/qtpositioning \

@@ -1,6 +1,5 @@
 @bin bin/xfce4-screensaver
 @bin bin/xfce4-screensaver-command
-bin/xfce4-screensaver-configure.py
 @bin bin/xfce4-screensaver-preferences
 libexec/xfce4-screensaver/
 @mode g+s
@@ -8,8 +7,8 @@ libexec/xfce4-screensaver/
 @bin libexec/xfce4-screensaver-ask-pass
 @mode
 @group
+libexec/xfce4-screensaver-configure.py
 @bin libexec/xfce4-screensaver-dialog
-@bin libexec/xfce4-screensaver-gl-helper
 @bin libexec/xfce4-screensaver/floaters
 @bin libexec/xfce4-screensaver/popsquares
 @bin libexec/xfce4-screensaver/slideshow
@@ -72,6 +71,7 @@ share/locale/oc/LC_MESSAGES/xfce4-screensaver.mo
 share/locale/pl/LC_MESSAGES/xfce4-screensaver.mo
 share/locale/pt/LC_MESSAGES/xfce4-screensaver.mo
 share/locale/pt_BR/LC_MESSAGES/xfce4-screensaver.mo
+share/locale/ro/LC_MESSAGES/xfce4-screensaver.mo
 share/locale/ru/LC_MESSAGES/xfce4-screensaver.mo
 share/locale/sk/LC_MESSAGES/xfce4-screensaver.mo
 share/locale/sl/LC_MESSAGES/xfce4-screensaver.mo

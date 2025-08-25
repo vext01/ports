@@ -1,9 +1,9 @@
 COMMENT =		GNU assembler
 
-V =			2.31.1
+V =			2.45
+REVISION =		0
 DISTNAME =		binutils-$V
 PKGNAME =		gas-$V
-REVISION =		0
 
 CATEGORIES =		devel
 
@@ -14,7 +14,7 @@ MAINTAINER =		Pascal Stumpf <pascal@stumpf.co>
 # GPLv3+
 PERMIT_PACKAGE =	Yes
 
-WANTLIB +=		c z
+WANTLIB +=		c z zstd
 
 SITES =			${SITE_GNU:=binutils/}
 
@@ -28,12 +28,16 @@ CONFIGURE_ARGS +=	--disable-ld \
 			--disable-shared \
 			--disable-host-shared
 
+USE_GMAKE =		yes
+
 LIBTOOL_FLAGS =		--tag=disable-shared
+LIB_DEPENDS =		archivers/zstd
 
 post-extract:
 	@rm -rf ${WRKSRC}/{binutils,gprof}
 
 post-install:
 	cd ${PREFIX}/info && mv as.info gas.info
+	cd ${PREFIX}/info && rm bfd.info ctf-spec.info sframe-spec.info
 
 .include <bsd.port.mk>

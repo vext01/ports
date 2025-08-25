@@ -5,7 +5,7 @@ USE_WXNEEDED =		Yes
 
 COMMENT = JavaScript runtime built on Chrome's V8 JavaScript engine
 
-NODE_VERSION =		v22.17.0
+NODE_VERSION =		v22.18.0
 DISTFILES =		${DISTNAME}-headers.tar.gz \
 			${DISTNAME}.tar.xz
 DIST_TUPLE =		github qbit node-pledge 1.1.3 \
@@ -71,7 +71,7 @@ LIB_DEPENDS +=		archivers/brotli \
 			www/nghttp2 \
 			www/nghttp3
 
-OPENSSL_VSN =		3.3
+OPENSSL_VSN =		3.5
 EOPENSSL_VSN =		eopenssl${OPENSSL_VSN:C/\.//}
 EOPENSSL_LIB =		${LOCALBASE}/lib/${EOPENSSL_VSN}
 EOPENSSL_INC =		${LOCALBASE}/include/${EOPENSSL_VSN}

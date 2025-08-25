@@ -29,6 +29,9 @@ PKGNAME-utils =		kde-utils-${MODKDE_GEAR_VERSION}
 
 PKGNAME-plasma =	kde-plasma-${MODKDE_PLASMA_VERSION}
 PKGNAME-plasma-extras =	kde-plasma-extras-${MODKDE_PLASMA_VERSION}
+REVISION-development =	1
+REVISION-main =		1
+REVISION-utils =	0
 
 MULTI_PACKAGES +=	-main \
 			-games \
@@ -245,6 +248,7 @@ RUN_DEPENDS-utils = \
 	x11/kde-applications/kcharselect \
 	x11/kde-applications/kdebugsettings \
 	x11/kde-applications/kdf \
+	x11/kde-applications/itinerary \
 	x11/kde-applications/kgpg \
 	x11/kde-applications/kteatime \
 	x11/kde-applications/ktimer \
@@ -324,7 +328,6 @@ RUN_DEPENDS-development += \
 
 RUN_DEPENDS-development += \
 	x11/kde-applications/okteta \
-	x11/kde-applications/signon-kwallet-extension \
 	x11/kde-applications/kaccounts-providers
 
 # Not yet ported
@@ -373,6 +376,7 @@ RUN_DEPENDS-plasma += \
 		x11/kde-plasma/ksystemstats \
 		x11/kde-plasma/kwayland \
 		x11/kde-plasma/kwin \
+		x11/kde-plasma/kwin-x11 \
 		x11/kde-plasma/kwrited \
 		x11/kde-plasma/layer-shell-qt \
 		x11/kde-plasma/libkscreen \
@@ -391,6 +395,7 @@ RUN_DEPENDS-plasma += \
 		x11/kde-plasma/plasma-workspace \
 		x11/kde-plasma/plasma-workspace-wallpapers \
 		x11/kde-plasma/polkit-kde-agent-1 \
+		x11/kde-plasma/spectacle \
 		x11/kde-plasma/powerdevil \
 		x11/kde-plasma/print-manager \
 		x11/kde-plasma/qqc2-breeze-style \

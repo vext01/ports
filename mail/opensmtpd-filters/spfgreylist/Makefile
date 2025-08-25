@@ -2,9 +2,10 @@ COMMENT =	SPF-aware greylisting filter for the OpenSMTPD daemon
 
 FILTER_NAME =	spfgreylist
 V =		1.0.0
+REVISION =	0
 
 MODGO_MODNAME =	github.com/poolpOrg/filter-${FILTER_NAME}
-MODGO_VERSION =	v1.0.0
+MODGO_VERSION =	v${V}
 
 GH_ACCOUNT =	poolpOrg
 GH_PROJECT =	filter-spfgreylist
@@ -14,6 +15,8 @@ CATEGORIES =	mail
 
 # ISC
 PERMIT_PACKAGE =	Yes
+
+WANTLIB += c pthread
 
 MODULES =	lang/go
 NO_TEST =	Yes

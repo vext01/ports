@@ -247,6 +247,7 @@ include/kwin/wayland/subcompositor.h
 include/kwin/wayland/surface.h
 include/kwin/wayland/tablet_v2.h
 include/kwin/wayland/tearingcontrol_v1.h
+include/kwin/wayland/textinput.h
 include/kwin/wayland/textinput_v1.h
 include/kwin/wayland/textinput_v2.h
 include/kwin/wayland/textinput_v3.h
@@ -1681,6 +1682,7 @@ share/locale/pa/LC_MESSAGES/kcmkwincommon.mo
 share/locale/pa/LC_MESSAGES/kcmkwinscreenedges.mo
 share/locale/pa/LC_MESSAGES/kcmkwm.mo
 share/locale/pa/LC_MESSAGES/kwin.mo
+share/locale/pl/LC_MESSAGES/kcm_animations.mo
 share/locale/pl/LC_MESSAGES/kcm_kwin_effects.mo
 share/locale/pl/LC_MESSAGES/kcm_kwin_scripts.mo
 share/locale/pl/LC_MESSAGES/kcm_kwin_virtualdesktops.mo

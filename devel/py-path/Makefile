@@ -1,9 +1,8 @@
 COMMENT=	module wrapper for os.path
 
-MODPY_DISTV=	17.1.0
+MODPY_DISTV=	17.1.1
 DISTNAME=	path-${MODPY_DISTV}
 PKGNAME=	py-${DISTNAME}
-REVISION=	1
 
 CATEGORIES=	devel
 
@@ -16,6 +15,7 @@ MODULES=	lang/python
 MODPY_PYBUILD=	setuptools_scm
 MODPY_PI=	Yes
 
+BUILD_DEPENDS=	misc/py-coherent.licensed
 TEST_DEPENDS=	devel/py-appdirs \
 		devel/py-more-itertools
 

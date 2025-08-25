@@ -2,12 +2,14 @@
      SUBDIR += aarch64-esr-decoder
      SUBDIR += accountsservice
      SUBDIR += alertmanager
+     SUBDIR += alloy
      SUBDIR += amazon-ecs-cli
      SUBDIR += amazon-ssm-agent
      SUBDIR += anacron
      SUBDIR += ansible
      SUBDIR += ansible-core
      SUBDIR += ansible-lint
+     SUBDIR += ansible-runner
      SUBDIR += apachetop
      SUBDIR += apcd
      SUBDIR += apcupsd
@@ -162,6 +164,7 @@
      SUBDIR += iucode-tool
      SUBDIR += iwatch
      SUBDIR += jefferson
+     SUBDIR += just
      SUBDIR += kitd
      SUBDIR += kopia
      SUBDIR += krename
@@ -353,6 +356,7 @@
      SUBDIR += py-vmomi
      SUBDIR += py-vsphere-automation
      SUBDIR += py-watchdog
+     SUBDIR += py-xxhash
      SUBDIR += py-zabbix-api
      SUBDIR += radiusreport
      SUBDIR += radmind

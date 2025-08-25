@@ -1,6 +1,6 @@
 COMMENT =	analyze C source files and print a call graph
 
-DISTNAME =	cflow-1.7
+DISTNAME =	cflow-1.8
 CATEGORIES =	devel
 
 HOMEPAGE =	https://www.gnu.org/software/cflow/
@@ -10,7 +10,7 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE =		Yes
 
-WANTLIB =		c iconv intl
+WANTLIB =  c iconv intl pthread
 
 SITES =			${SITE_GNU:=cflow/}
 

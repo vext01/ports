@@ -244,8 +244,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}arcpub
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}arcpublishing.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}ard.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}ard.${MODPY_PYC_MAGIC_TAG}pyc
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}arkena.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}arkena.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}arnes.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}arnes.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}art19.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -284,8 +282,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}baidu.
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}baidu.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}banbye.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}banbye.${MODPY_PYC_MAGIC_TAG}pyc
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}bandaichannel.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}bandaichannel.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}bandcamp.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}bandcamp.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}bandlab.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -304,8 +300,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}beeg.$
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}beeg.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}behindkink.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}behindkink.${MODPY_PYC_MAGIC_TAG}pyc
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}bellmedia.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}bellmedia.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}berufetv.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}berufetv.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}bet.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -364,6 +358,8 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}bright
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}brightcove.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}brilliantpala.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}brilliantpala.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}btvplus.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}btvplus.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}bundesliga.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}bundesliga.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}bundestag.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -466,8 +462,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}clubic
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}clubic.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}clyp.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}clyp.${MODPY_PYC_MAGIC_TAG}pyc
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}cmt.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}cmt.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}cnbc.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}cnbc.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}cnn.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -508,8 +502,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}cspan.
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}cspan.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}ctsnews.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}ctsnews.${MODPY_PYC_MAGIC_TAG}pyc
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}ctv.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}ctv.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}ctvnews.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}ctvnews.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}cultureunplugged.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -598,8 +590,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}dvtv.$
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}dvtv.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}dw.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}dw.${MODPY_PYC_MAGIC_TAG}pyc
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}eagleplatform.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}eagleplatform.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}ebaumsworld.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}ebaumsworld.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}ebay.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -664,6 +654,8 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}fancod
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}fancode.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}fathom.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}fathom.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}faulio.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}faulio.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}faz.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}faz.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}fc2.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -926,8 +918,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}jixie.
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}jixie.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}joj.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}joj.${MODPY_PYC_MAGIC_TAG}pyc
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}joqrag.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}joqrag.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}jove.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}jove.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}jstream.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -1018,8 +1008,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}lifene
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}lifenews.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}likee.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}likee.${MODPY_PYC_MAGIC_TAG}pyc
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}limelight.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}limelight.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}linkedin.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}linkedin.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}liputan6.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -1120,6 +1108,8 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}minds.
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}minds.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}minoto.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}minoto.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}mir24tv.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}mir24tv.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}mirrativ.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}mirrativ.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}mirrorcouk.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -1132,6 +1122,8 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}mixch.
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}mixch.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}mixcloud.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}mixcloud.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}mixlr.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}mixlr.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}mlb.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}mlb.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}mlssoccer.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -1262,8 +1254,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}nonktu
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}nonktube.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}noodlemagazine.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}noodlemagazine.${MODPY_PYC_MAGIC_TAG}pyc
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}noovo.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}noovo.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}nosnl.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}nosnl.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}nova.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -1400,12 +1390,12 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}pirami
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}piramidetv.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}pixivsketch.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}pixivsketch.${MODPY_PYC_MAGIC_TAG}pyc
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}pladform.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}pladform.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}planetmarathi.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}planetmarathi.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}platzi.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}platzi.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}playerfm.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}playerfm.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}playplustv.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}playplustv.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}playsuisse.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -1420,6 +1410,8 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}plutot
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}plutotv.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}plvideo.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}plvideo.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}plyr.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}plyr.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}podbayfm.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}podbayfm.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}podchaser.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -1642,6 +1634,8 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}sharev
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}sharevideos.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}shemaroome.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}shemaroome.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}shiey.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}shiey.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}showroomlive.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}showroomlive.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}sibnet.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -1694,8 +1688,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}spankb
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}spankbang.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}spiegel.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}spiegel.${MODPY_PYC_MAGIC_TAG}pyc
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}spike.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}spike.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}sport5.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}sport5.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}sportbox.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -1822,6 +1814,8 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}tfo.${
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}tfo.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}theguardian.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}theguardian.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}thehighwire.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}thehighwire.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}theholetv.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}theholetv.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}theintercept.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -1880,8 +1874,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}trunew
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}trunews.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}truth.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}truth.${MODPY_PYC_MAGIC_TAG}pyc
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}trutv.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}trutv.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}tube8.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}tube8.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}tubetugraz.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -1920,8 +1912,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}tvigle
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}tvigle.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}tviplayer.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}tviplayer.${MODPY_PYC_MAGIC_TAG}pyc
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}tvland.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}tvland.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}tvn24.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}tvn24.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}tvnoe.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -1966,6 +1956,8 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}umg.${
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}umg.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}unistra.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}unistra.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}unitednations.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}unitednations.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}unity.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}unity.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}unsupported.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -1996,8 +1988,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}veo.${
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}veo.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}vesti.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}vesti.${MODPY_PYC_MAGIC_TAG}pyc
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}vevo.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}vevo.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}vgtv.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}vgtv.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/${MODPY_PYCACHE}vh1.${MODPY_PYC_MAGIC_TAG}${MODPY_PYOEXTENSION}
@@ -2235,7 +2225,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/appletrailers.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/archiveorg.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/arcpublishing.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/ard.py
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/arkena.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/arnes.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/art19.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/arte.py
@@ -2255,7 +2244,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/axs.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/azmedien.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/baidu.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/banbye.py
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/bandaichannel.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/bandcamp.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/bandlab.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/bannedvideo.py
@@ -2265,7 +2253,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/beatbump.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/beatport.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/beeg.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/behindkink.py
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/bellmedia.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/berufetv.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/bet.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/bfi.py
@@ -2295,6 +2282,7 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/brainpop.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/breitbart.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/brightcove.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/brilliantpala.py
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/btvplus.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/bundesliga.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/bundestag.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/bunnycdn.py
@@ -2346,7 +2334,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/cloudflarestream.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/cloudycdn.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/clubic.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/clyp.py
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/cmt.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/cnbc.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/cnn.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/comedycentral.py
@@ -2367,7 +2354,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/crowdbunker.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/crtvg.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/cspan.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/ctsnews.py
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/ctv.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/ctvnews.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/cultureunplugged.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/curiositystream.py
@@ -2412,7 +2398,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/dumpert.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/duoplay.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/dvtv.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/dw.py
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/eagleplatform.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/ebaumsworld.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/ebay.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/egghead.py
@@ -2445,6 +2430,7 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/eyedotv.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/facebook.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/fancode.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/fathom.py
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/faulio.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/faz.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/fc2.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/fczenit.py
@@ -2576,7 +2562,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/jeuxvideo.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/jiosaavn.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/jixie.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/joj.py
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/joqrag.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/jove.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/jstream.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/jtbc.py
@@ -2622,7 +2607,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/libraryofcongress.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/libsyn.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/lifenews.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/likee.py
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/limelight.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/linkedin.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/liputan6.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/listennotes.py
@@ -2673,12 +2657,14 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/microsoftembed.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/microsoftstream.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/minds.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/minoto.py
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/mir24tv.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/mirrativ.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/mirrorcouk.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/mit.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/mitele.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/mixch.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/mixcloud.py
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/mixlr.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/mlb.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/mlssoccer.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/mocha.py
@@ -2744,7 +2730,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/nobelprize.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/noice.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/nonktube.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/noodlemagazine.py
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/noovo.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/nosnl.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/nova.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/novaplay.py
@@ -2813,9 +2798,9 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/pinkbike.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/pinterest.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/piramidetv.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/pixivsketch.py
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/pladform.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/planetmarathi.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/platzi.py
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/playerfm.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/playplustv.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/playsuisse.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/playtvak.py
@@ -2823,6 +2808,7 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/playwire.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/pluralsight.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/plutotv.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/plvideo.py
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/plyr.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/podbayfm.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/podchaser.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/podomatic.py
@@ -2934,6 +2920,7 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/shahid.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/sharepoint.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/sharevideos.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/shemaroome.py
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/shiey.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/showroomlive.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/sibnet.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/simplecast.py
@@ -2960,7 +2947,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/southpark.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/sovietscloset.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/spankbang.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/spiegel.py
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/spike.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/sport5.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/sportbox.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/sportdeutschland.py
@@ -3024,6 +3010,7 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/testurl.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/tf1.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/tfo.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/theguardian.py
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/thehighwire.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/theholetv.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/theintercept.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/theplatform.py
@@ -3053,7 +3040,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/trtworld.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/trueid.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/trunews.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/truth.py
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/trutv.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/tube8.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/tubetugraz.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/tubitv.py
@@ -3073,7 +3059,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/tvc.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/tver.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/tvigle.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/tviplayer.py
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/tvland.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/tvn24.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/tvnoe.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/tvopengr.py
@@ -3096,6 +3081,7 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/uktvplay.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/uliza.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/umg.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/unistra.py
+lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/unitednations.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/unity.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/unsupported.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/uol.py
@@ -3111,7 +3097,6 @@ lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/varzesh3.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/vbox7.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/veo.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/vesti.py
-lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/vevo.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/vgtv.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/vh1.py
 lib/python${MODPY_VERSION}/site-packages/yt_dlp/extractor/vice.py

@@ -1,5 +1,11 @@
+# XXX Don't use security/openssl/X in other ports unless there's a big problem
+# or a specific reason why not to use LibreSSL with that port - it is easy to
+# create runtime library conflicts. In those special cases, please add comments
+# to the port explaining why OpenSSL is needed instead of LibreSSL and discuss
+# such a change on ports/ICB.
+
 # static link, need bump on update:
-# security/sslscan
+# mail/postfix/stable security/sslscan sysutils/borgbackup/2.0
 
 .if ${MACHINE_ARCH} != aarch64 && ${MACHINE_ARCH} != amd64 && ${MACHINE_ARCH} != riscv64
 USE_NOEXECONLY =	Yes
@@ -7,7 +13,7 @@ USE_NOEXECONLY =	Yes
 
 # skip PORTROACH limit for newest version
 #PORTROACH=	limit:^3\.2
-V=		3.5.1
+V=		3.5.2
 PKGNAME=	openssl-${V}
 PKGSPEC=	openssl->=3.5v0,<3.6v0
 EPOCH=		0

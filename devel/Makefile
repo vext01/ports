@@ -55,10 +55,12 @@
      SUBDIR += boost
      SUBDIR += boxed-cpp
      SUBDIR += bpython
+     SUBDIR += bstring
      SUBDIR += bullet
      SUBDIR += c2ffi
      SUBDIR += cabal-bundler
      SUBDIR += cabal-install
+     SUBDIR += capnproto
      SUBDIR += capstone
      SUBDIR += cargo-audit
      SUBDIR += cargo-c
@@ -70,7 +72,6 @@
      SUBDIR += cbmc
      SUBDIR += ccache
      SUBDIR += ccrtp
-     SUBDIR += cdk
      SUBDIR += cereal
      SUBDIR += cflow
      SUBDIR += cgdb
@@ -227,6 +228,7 @@
      SUBDIR += hub
      SUBDIR += iaito
      SUBDIR += id-utils
+     SUBDIR += illumos-os-tests
      SUBDIR += imake
      SUBDIR += imake-cf
      SUBDIR += immer
@@ -274,6 +276,7 @@
      SUBDIR += libbfio
      SUBDIR += libbgcode
      SUBDIR += libbinio
+     SUBDIR += libbson
      SUBDIR += libcdada
      SUBDIR += libcoap
      SUBDIR += libconfig
@@ -529,6 +532,7 @@
      SUBDIR += p5-B-Hooks-OP-Check
      SUBDIR += p5-B-Keywords
      SUBDIR += p5-B-Utils
+     SUBDIR += p5-Badger
      SUBDIR += p5-BFD
      SUBDIR += p5-BSD-Resource
      SUBDIR += p5-BSD-arc4random
@@ -832,6 +836,7 @@
      SUBDIR += p5-Hash-AutoHash-Args
      SUBDIR += p5-Hash-Flatten
      SUBDIR += p5-Hash-Merge
+     SUBDIR += p5-Hash-Merge-Extra
      SUBDIR += p5-Hash-Merge-Simple
      SUBDIR += p5-Hash-MultiValue
      SUBDIR += p5-Hash-NoRef
@@ -1066,6 +1071,7 @@
      SUBDIR += p5-Return-Value
      SUBDIR += p5-Role-Basic
      SUBDIR += p5-Role-Tiny
+     SUBDIR += p5-Role-Hooks
      SUBDIR += p5-SDL
      SUBDIR += p5-SUPER
      SUBDIR += p5-SVN-Notify
@@ -1649,6 +1655,7 @@
      SUBDIR += py-regex
      SUBDIR += py-rencode
      SUBDIR += py-resolvelib
+     SUBDIR += py-retry2
      SUBDIR += py-rfc3339-validator
      SUBDIR += py-rfc3986-validator
      SUBDIR += py-rfc6555
@@ -1804,9 +1811,9 @@
      SUBDIR += qbs
      SUBDIR += qcoro
      SUBDIR += qgit
-     SUBDIR += qjson
      SUBDIR += qp
      SUBDIR += qt-creator
+     SUBDIR += qtilitools
      SUBDIR += quilt
      SUBDIR += quirks
      SUBDIR += radare2
@@ -1848,7 +1855,8 @@
      SUBDIR += ruby-get_process_mem
      SUBDIR += ruby-gettext
      SUBDIR += ruby-gettext-setup
-     SUBDIR += ruby-google-protobuf
+     SUBDIR += ruby-google-protobuf,ruby33
+     SUBDIR += ruby-google-protobuf,ruby34
      SUBDIR += ruby-highline
      SUBDIR += ruby-hitimes
      SUBDIR += ruby-hocon
@@ -1927,6 +1935,7 @@
      SUBDIR += sdl2-net
      SUBDIR += sdl2-pango
      SUBDIR += sdl2-ttf
+     SUBDIR += sdl3
      SUBDIR += sdlmm
      SUBDIR += seergdb
      SUBDIR += selene
@@ -1970,6 +1979,7 @@
      SUBDIR += tea
      SUBDIR += teensyloader
      SUBDIR += template-glib
+     SUBDIR += terraform-ls
      SUBDIR += thrift
      SUBDIR += ti-msp430gcc
      SUBDIR += tig
@@ -2010,6 +2020,7 @@
      SUBDIR += yarn
      SUBDIR += yasm
      SUBDIR += yder
+     SUBDIR += yyjson
      SUBDIR += z80ex
      SUBDIR += zeal
      SUBDIR += zmac

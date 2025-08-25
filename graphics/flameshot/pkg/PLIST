@@ -5,8 +5,6 @@ share/bash-completion/completions/flameshot
 share/dbus-1/interfaces/
 share/dbus-1/interfaces/org.flameshot.Flameshot.xml
 share/dbus-1/services/org.flameshot.Flameshot.service
-share/fish/
-share/fish/vendor_completions.d/
 share/fish/vendor_completions.d/flameshot.fish
 share/flameshot/
 share/flameshot/translations/
@@ -15,6 +13,7 @@ share/flameshot/translations/Internationalization_ca.qm
 share/flameshot/translations/Internationalization_cs.qm
 share/flameshot/translations/Internationalization_de_DE.qm
 share/flameshot/translations/Internationalization_el.qm
+share/flameshot/translations/Internationalization_en.qm
 share/flameshot/translations/Internationalization_es.qm
 share/flameshot/translations/Internationalization_eu.qm
 share/flameshot/translations/Internationalization_fa.qm
@@ -52,8 +51,6 @@ share/icons/hicolor/scalable/apps/flameshot.svg
 share/icons/hicolor/scalable/apps/org.flameshot.Flameshot.svg
 share/metainfo/
 share/metainfo/org.flameshot.Flameshot.metainfo.xml
-share/zsh/
-share/zsh/site-functions/
 share/zsh/site-functions/_flameshot
 @tag gtk-update-icon-cache %D/share/icons/hicolor
 @tag update-desktop-database

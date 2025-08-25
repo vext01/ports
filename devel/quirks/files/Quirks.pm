@@ -1,7 +1,7 @@
 #! /usr/bin/perl
 
 # ex:ts=8 sw=4:
-# $OpenBSD: Quirks.pm,v 1.1729 2025/06/22 12:28:32 daniel Exp $
+# $OpenBSD: Quirks.pm,v 1.1742 2025/08/18 12:22:03 daniel Exp $
 #
 # Copyright (c) 2009 Marc Espie <espie@openbsd.org>
 #
@@ -630,6 +630,11 @@ my $stem_extensions = {
 	'py-numpy' => 'py3-numpy',
 	'py-Pillow' => 'py3-Pillow',
 	'py-opengl' => 'py3-opengl',
+	'compton-conf' => 'picom-config',
+	'minetest' => 'luanti',
+	'qcoro-qt6' => 'qcoro',
+	'libaccounts-qt6' => 'libaccounts-qt',
+	'kdsoap-qt6' => 'kdsoap-qt',
 };
 
 my $obsolete_reason = {};
@@ -1270,6 +1275,15 @@ setup_obsolete_reason(
 	3 => 'mysticmine',
 	3 => 'fretsonfire',
 	3 => 'py-lpsolve',
+	12 => 'rcube-markasjunk2',
+	12 => 'rcube-sieverules',
+	3 => 'rcube-yubikey-plugin',
+	3 => 'qjson',
+	3 => 'mysql-utilities',
+	5 => 'cdk',
+	5 => 'libdazzle',
+	5 => 'clutter-gst',
+	3 => 'bruce',
 );
 
 # though it's not yet used, these should be pkgnames, so that eventually
@@ -1305,6 +1319,7 @@ my $obsolete_message = {
 	9 => "removed, needs a port maintainer",
 	10 => "other OS suggested, or see https://docs.gotosocial.org/en/latest/advanced/builds/nowasm/",
 	11 => "no longer packageable",
+	12 => "use the alternative plugin distributed with roundcube instead (markasjunk, managesieve)",
 	13 => "has a dependency on obsolete software",
 	15 => "use rspamd's internal milter support instead",
 	27 => "requires GUdev",

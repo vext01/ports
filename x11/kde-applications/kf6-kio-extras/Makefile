@@ -1,12 +1,13 @@
 COMMENT =	extra functionality for kioslaves
 DISTNAME =	kio-extras-${VERSION}
 PKGNAME =	kf6-kio-extras-${VERSION}
+REVISION =	2
 
 CATEGORIES =	productivity net
 
 SHARED_LIBS +=	kioarchive6               0.0 # 0.0
 
-WANTLIB += ${COMPILER_LIBCXX} GL Iex-3_3 IlmThread-3_3 Imath-3_1
+WANTLIB += ${COMPILER_LIBCXX} GL Iex-3_3 IlmThread-3_3 Imath-3_2
 WANTLIB += KDSoapWSDiscoveryClient KExiv2Qt6 KF6Archive KF6Bookmarks
 WANTLIB += KF6Codecs KF6ColorScheme KF6Completion KF6ConfigCore
 WANTLIB += KF6ConfigGui KF6ConfigWidgets KF6CoreAddons KF6DBusAddons
@@ -55,11 +56,11 @@ LIB_DEPENDS =	audio/taglib \
 		devel/kf6/sonnet \
 		devel/kf6/syntax-highlighting \
 		devel/libmtp \
-		devel/qcoro,qt6 \
+		devel/qcoro \
 		graphics/openexr \
 		math/imath \
 		multimedia/phonon,qt6 \
-		net/kdsoap,qt6 \
+		net/kdsoap \
 		net/kdsoap-ws-discovery-client \
 		net/samba \
 		security/libssh \

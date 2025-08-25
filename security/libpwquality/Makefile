@@ -1,11 +1,11 @@
 COMMENT =		library to generate, and check strengh of passwords
 
-MODPY_DISTV =	1.4.5
+MODPY_DISTV =		1.4.5
 GH_PROJECT =		libpwquality
 GH_ACCOUNT =		libpwquality
 GH_TAGNAME =		libpwquality-${MODPY_DISTV}
 DISTNAME =		libpwquality-${MODPY_DISTV}
-REVISION =		2
+REVISION =		4
 
 SHARED_LIBS +=  pwquality            1.0      # 1.2
 
@@ -16,10 +16,11 @@ MAINTAINER =		Antoine Jacoutot <ajacoutot@openbsd.org>
 # GPLv2+
 PERMIT_PACKAGE =	Yes
 
-WANTLIB += c crack iconv intl z
+WANTLIB =  c crack iconv intl pthread z
 
 MODULES =		lang/python
-MODPY_SETUPTOOLS =	Yes
+
+MODPY_PYBUILD =		setuptools
 
 USE_GMAKE =		Yes
 

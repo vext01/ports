@@ -4,7 +4,8 @@ GH_ACCOUNT =		AcademySoftwareFoundation
 GH_PROJECT =		OpenColorIO
 GH_TAGNAME =		v2.4.2
 PKGNAME =		${DISTNAME:L}
-REVISION =		0
+REVISION =		2
+
 EPOCH =			2
 
 SHARED_LIBS +=  OpenColorIO               5.0 # 1.1.1
@@ -16,7 +17,7 @@ HOMEPAGE =		https://opencolorio.org/
 # several BSD-like
 PERMIT_PACKAGE =	Yes
 
-WANTLIB += ${COMPILER_LIBCXX} Imath-3_1 expat m minizip pystring yaml-cpp z
+WANTLIB += ${COMPILER_LIBCXX} Imath-3_2 expat m minizip pystring yaml-cpp z
 
 COMPILER =		base-clang ports-gcc
 

@@ -1,7 +1,9 @@
 COMMENT=		industrial-grade ticketing system
 
-DISTNAME=		rt-5.0.8
+DISTNAME=		rt-6.0.0
 CATEGORIES=		www
+
+REVISION=		0
 
 MAINTAINER=		Robert Nagy <robert@openbsd.org>
 
@@ -28,6 +30,8 @@ RUN_DEPENDS=		converters/p5-Convert-ASN1 \
 			devel/p5-Devel-GlobalDestruction \
 			devel/p5-Devel-StackTrace \
 			devel/p5-File-ShareDir \
+			devel/p5-Hash-Merge \
+			devel/p5-Hash-Merge-Extra \
 			devel/p5-IPC-Run \
 			devel/p5-IPC-Run-SafeHandles \
 			devel/p5-IPC-Run3 \
@@ -52,6 +56,7 @@ RUN_DEPENDS=		converters/p5-Convert-ASN1 \
 			devel/p5-Universal-require \
 			graphics/gd \
 			graphics/p5-GD-Graph \
+			graphics/p5-Imager \
 			mail/p5-Email-Address \
 			mail/p5-Email-Address-List \
 			mail/p5-Mail-Tools \
@@ -88,6 +93,7 @@ RUN_DEPENDS=		converters/p5-Convert-ASN1 \
 			www/p5-Apache-Session \
 			www/p5-CGI-Emulate-PSGI \
 			www/p5-CGI-PSGI \
+			www/p5-CSS-Inliner \
 			www/p5-CSS-Minifier-XS \
 			www/p5-CSS-Squish \
 			www/p5-Data-Page-Pageset \

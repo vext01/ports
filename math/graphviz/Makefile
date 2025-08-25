@@ -6,7 +6,8 @@ DISTNAME=	graphviz-$V
 PKGNAME-main=	${DISTNAME}
 PKGNAME-tcl=	graphviz-tcl-$V
 CATEGORIES=	math devel graphics
-REVISION-main=	0
+REVISION-main=	1
+REVISION-tcl=	0
 
 MULTI_PACKAGES=	-main -tcl
 
@@ -38,7 +39,7 @@ MAINTAINER=	Edd Barrett <edd@openbsd.org>
 # Eclipse Public License v1.0
 PERMIT_PACKAGE=	Yes
 
-WANTLIB += ${COMPILER_LIBCXX} X11 Xau Xdmcp Xext Xrender cairo
+WANTLIB += ${COMPILER_LIBCXX} Lerc X11 Xau Xdmcp Xext Xrender cairo
 WANTLIB += expat ffi fontconfig freetype fribidi gd gio-2.0 glib-2.0
 WANTLIB += gmodule-2.0 gobject-2.0 graphite2 harfbuzz iconv intl
 WANTLIB += jpeg ltdl lzma m pango-1.0 pangocairo-1.0 pangoft2-1.0
@@ -47,9 +48,9 @@ WANTLIB += z zstd
 
 WANTLIB-main += ${WANTLIB}
 WANTLIB-main += Xcomposite Xcursor Xdamage Xfixes Xi Xinerama Xrandr
-WANTLIB-main += c cairo-gobject gc gdk-x11-2.0 gdk_pixbuf-2.0
-WANTLIB-main += gmp guile-2.2 lcms2 openjp2 perl poppler
-WANTLIB-main += poppler-glib rsvg-2 unistring xml2
+WANTLIB-main += c gc gdk-x11-2.0 gdk_pixbuf-2.0 gmp guile-2.2
+WANTLIB-main += lcms2 openjp2 perl poppler poppler-glib rsvg-2 unistring
+WANTLIB-main += xml2
 
 # "extra" libtclXX: tcldot is built against Tcl headers
 WANTLIB-tcl += ${WANTLIB} ${MODTCL_WANTLIB}
@@ -124,7 +125,8 @@ CONFIGURE_ARGS+= --with-tclsh=${MODTCL_BIN} \
 CONFIGURE_ENV=	CPPFLAGS="-I${X11BASE}/include -I${LOCALBASE}/include" \
 		LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib" \
 		TCLCONFIG=${MODTCL_CONFIG} \
-		GUILE=guile2.2
+		GUILE=guile2.2 \
+		GUILE_CONFIG=guile-config2.2
 
 DOCBASE=	${PREFIX}/share/doc/graphviz
 EXBASE=		${PREFIX}/share/examples/graphviz

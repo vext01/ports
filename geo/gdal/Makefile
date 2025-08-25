@@ -3,7 +3,7 @@ USE_NOBTCFI-aarch64 =	Yes# fortran
 COMMENT-main =	translator library for geospatial data formats
 COMMENT-python =python bindings and utilities for GDAL
 
-V =		3.11.1
+V =		3.11.3
 DISTNAME =	gdal-${V}
 DISTFILES =	${DISTNAME}${EXTRACT_SUFX} \
 		gdalautotest-${V}${EXTRACT_SUFX}
@@ -77,6 +77,7 @@ WANTLIB-python =	gdal m pthread ${COMPILER_LIBCXX}
 
 BUILD_DEPENDS +=	${RUN_DEPENDS} \
 			${MODCLANG_RUN_DEPENDS} \
+			devel/py-setuptools \
 			math/py-numpy \
 			devel/gtest \
 			devel/swig
@@ -87,7 +88,6 @@ TEST_DEPENDS +=		${FULLPKGNAME-python}:${FULLPKGPATH-python} \
 			textproc/py-lxml
 TEST_ENV =		GDAL_DOWNLOAD_TEST_DATA=1 GDAL_RUN_SLOW_TESTS=yes
 
-MODPY_SETUPTOOLS =	Yes
 MODPY_DISTV =		${V:C/rc.//:C/beta.//}
 MODPY_ADJ_FILES =	swig/python/gdal-utils/osgeo_utils/samples/*.py swig/python/gdal-utils/scripts/*.py
 

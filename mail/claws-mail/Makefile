@@ -4,6 +4,7 @@ COMMENT-spamassassin=	spamassassin plugin
 COMMENT-pdfviewer=	pdfviewer plugin
 
 V=			4.3.1
+REVISION-main=		1
 DISTNAME=		claws-mail-${V}
 
 CATEGORIES=		mail news

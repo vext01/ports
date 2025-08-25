@@ -1,14 +1,15 @@
 COMMENT =		pygments theme using jupyterlab CSS variables
 
-# XXX 0.2.0+ requires jupyterlab causing circular dependencies
-MODPY_DISTV =	0.1.2
+MODPY_DISTV =		0.3.0
 DISTNAME =		jupyterlab_pygments-${MODPY_DISTV}
 PKGNAME =		py-${DISTNAME}
-REVISION =		2
+REVISION =		0
 
 CATEGORIES =		textproc
 
 HOMEPAGE =		https://jupyter.org/
+
+MAINTAINER =		Daniel Dickman <daniel@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE =	Yes
@@ -16,7 +17,10 @@ PERMIT_PACKAGE =	Yes
 MODULES =		lang/python
 
 MODPY_PI =		Yes
-MODPY_PYBUILD =		setuptools
+MODPY_PYBUILD =		hatchling
+
+BUILD_DEPENDS =		devel/py-hatch-jupyter-builder \
+			devel/py-hatch-nodejs-version
 
 RUN_DEPENDS =		textproc/py-pygments
 

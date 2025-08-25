@@ -1,6 +1,6 @@
 COMMENT=		simple encrypted backup tool for GNOME
 
-DIST_TUPLE=		gnome World deja-dup 48.2 .
+DIST_TUPLE=		gnome World deja-dup 48.4 .
 
 CATEGORIES=		sysutils
 
@@ -20,6 +20,8 @@ MODULES=		devel/meson \
 			x11/gnome
 
 MODGNOME_TOOLS=		desktop-file-utils gtk-update-icon-cache vala yelp
+
+BUILD_DEPENDS=		devel/appstream
 
 RUN_DEPENDS=		devel/py-gobject3 \
 			sysutils/duplicity \

@@ -1,7 +1,8 @@
 COMMENT-main =		fast, lightweight source control management
 COMMENT-x11 =		graphical tooling for mercurial
 
-MODPY_DISTV =		7.0.2
+MODPY_DISTV =		7.1
+REVISION =		0
 DISTNAME =		mercurial-${MODPY_DISTV}
 CATEGORIES =		devel
 
@@ -20,7 +21,8 @@ USE_GMAKE =		Yes
 MULTI_PACKAGES =	-main -x11
 
 BUILD_DEPENDS =		devel/gettext,-tools \
-			textproc/py-docutils
+			textproc/py-docutils \
+			textproc/py-roman-numerals
 TEST_DEPENDS =		archivers/unzip \
 			devel/git \
 			devel/mercurial,-main \
@@ -31,6 +33,7 @@ RUN_DEPENDS =		devel/libgit2/py-git2
 RUN_DEPENDS-x11 +=	${BASE_PKGPATH},-main \
 			${MODTK_RUN_DEPENDS}
 
+WANTLIB-main =		c
 WANTLIB-x11 =
 PKG_ARCH-x11 =		*
 

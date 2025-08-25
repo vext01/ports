@@ -1,7 +1,8 @@
 COMMENT =	advanced drawing and image manipulation
 
-VERSION =	5.2.10
+VERSION =	5.2.11
 DISTNAME =	krita-${VERSION}
+REVISION =	2
 
 SHARED_LIBS +=  kritabasicflakes          4.1 # 16.0
 SHARED_LIBS +=  kritacolord               2.0 # 16.0
@@ -45,7 +46,7 @@ MAINTAINER =	Rafael Sadowski <rsadowski@openbsd.org>
 # GPLv2+, LGPLv2+ and GNU FDLv1.2
 PERMIT_PACKAGE =	Yes
 
-WANTLIB += ${COMPILER_LIBCXX} ICE Iex-3_3 IlmThread-3_3 Imath-3_1
+WANTLIB += ${COMPILER_LIBCXX} ICE Iex-3_3 IlmThread-3_3 Imath-3_2
 WANTLIB += KF5Completion KF5ConfigCore KF5ConfigGui KF5CoreAddons
 WANTLIB += KF5Crash KF5GuiAddons KF5I18n KF5ItemViews KF5KDcraw
 WANTLIB += KF5WidgetsAddons KF5WindowSystem OpenColorIO OpenEXR-3_3
@@ -54,9 +55,9 @@ WANTLIB += Qt5Network Qt5PrintSupport Qt5Sql Qt5Svg Qt5Widgets
 WANTLIB += Qt5X11Extras Qt5Xml SDL2 SM X11 Xext Xi bz2 c exiv2
 WANTLIB += fftw3 fontconfig freetype fribidi gif glib-2.0 gobject-2.0
 WANTLIB += gsl gslcblas harfbuzz heif intl jpeg json-c jxl jxl_threads
-WANTLIB += lcms2 m mlt++-7 mlt-7 mypaint openjp2 png poppler poppler-qt5
+WANTLIB += lcms2 m mlt++-7 mlt-7 mypaint openjp2 png poppler-qt5
 WANTLIB += quazip1-qt5 tiff turbojpeg unibreak webp webpdemux
-WANTLIB += webpmux z
+WANTLIB += webpmux z poppler
 
 SITES =		${SITE_KDE:=stable/krita/${VERSION}/}
 EXTRACT_SUFX =	.tar.xz
@@ -115,7 +116,6 @@ LIB_DEPENDS =		archivers/bzip2 \
 			math/imath \
 			multimedia/libheif \
 			multimedia/mlt7 \
-			print/poppler \
 			print/poppler,-qt5 \
 			textproc/libunibreak \
 			x11/kde-applications/libkdcraw \

@@ -77,15 +77,17 @@ include/Imath/PyImathVecOperators.h
 include/Imath/half.h
 include/Imath/halfFunction.h
 include/Imath/halfLimits.h
-lib/cmake/
 lib/cmake/Imath/
 lib/cmake/Imath/ImathConfig.cmake
 lib/cmake/Imath/ImathConfigVersion.cmake
 lib/cmake/Imath/ImathTargets${MODCMAKE_BUILD_SUFFIX}
 lib/cmake/Imath/ImathTargets.cmake
-@lib lib/libImath-3_1.so.${LIBImath-3_1_VERSION}
+lib/cmake/Imath/PyImathTargets${MODCMAKE_BUILD_SUFFIX}
+lib/cmake/Imath/PyImathTargets.cmake
+@lib lib/libImath-3_2.so.${LIBImath-3_2_VERSION}
 @lib lib/libImath.so.${LIBImath_VERSION}
-@lib lib/libPyImath_Python3_12-3_1.so.${LIBPyImath_Python3_12-3_1_VERSION}
+@lib lib/libPyImath.so.${LIBPyImath_VERSION}
+@lib lib/libPyImath_Python3_12-3_2.so.${LIBPyImath_Python3_12-3_2_VERSION}
 lib/pkgconfig/Imath.pc
 lib/pkgconfig/PyImath.pc
 @so lib/python${MODPY_VERSION}/site-packages/imath.so

@@ -44,10 +44,12 @@ MODKDE_TRANSLATIONS = Yes
 MODKDE_ICON_CACHE = Yes
 MODKDE_DOCS = Yes
 
-BUILD_DEPENDS =	x11/kde-plasma/kwin>=${VERSION} \
+BUILD_DEPENDS =	devel/kf6/kquickcharts \
 		graphics/kirigami-addons \
-		x11/xdotool \
-		devel/kf6/kquickcharts
+		x11/kde-plasma/kpipewire>=${VERSION} \
+		x11/kde-plasma/kwin>=${VERSION} \
+		x11/qt6/qtlocation \
+		x11/xdotool
 
 RUN_DEPENDS =	devel/desktop-file-utils \
 		devel/kf6/kquickcharts \
@@ -56,7 +58,8 @@ RUN_DEPENDS =	devel/desktop-file-utils \
 		sysutils/coreutils \
 		x11/dbus,-suid \
 		x11/kde-plasma/kpipewire>=${VERSION} \
-		x11/kde-plasma/kwin>=${VERSION}
+		x11/kde-plasma/kwin>=${VERSION} \
+		x11/qt6/qtlocation
 
 LIB_DEPENDS =	audio/libcanberra \
 		devel/kf6/attica \
@@ -104,7 +107,7 @@ LIB_DEPENDS =	audio/libcanberra \
 		devel/kf6/solid \
 		devel/kf6/sonnet \
 		devel/kf6/syntax-highlighting \
-		devel/qcoro,qt6 \
+		devel/qcoro \
 		math/libqalculate \
 		multimedia/phonon,qt6 \
 		sysutils/libudev-openbsd \
@@ -131,6 +134,8 @@ MODCMAKE_LDFLAGS =	-L${X11BASE}/lib -L${LOCALBASE}/lib
 
 CFLAGS +=		-I${LOCALBASE}/include/
 CXXFLAGS +=		-I${LOCALBASE}/include/
+
+CONFIGURE_ARGS +=	-DCMAKE_DISABLE_FIND_PACKAGE_AppStreamQt=ON
 
 DEBUG_PACKAGES =	${BUILD_PACKAGES}
 

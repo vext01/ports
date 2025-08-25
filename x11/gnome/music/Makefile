@@ -1,7 +1,7 @@
 COMMENT=		GNOME music playing application
 
 GNOME_PROJECT=		gnome-music
-GNOME_VERSION=		48.0
+GNOME_VERSION=		48.1
 
 HOMEPAGE=		https://apps.gnome.org/Music/
 
@@ -18,7 +18,8 @@ MODGNOME_TOOLS=		desktop-file-utils yelp gtk-update-icon-cache \
 
 MODGNOME_LDFLAGS=	-L${X11BASE}/lib
 
-BUILD_DEPENDS=		devel/py-gobject3 \
+BUILD_DEPENDS=		devel/appstream \
+			devel/py-gobject3 \
 			devel/libsoup3 \
 			graphics/py-cairo \
 			x11/gnome/grilo-plugins \

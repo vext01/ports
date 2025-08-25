@@ -66,6 +66,7 @@
      SUBDIR += foliate
      SUBDIR += fragistics
      SUBDIR += fstrcmp
+     SUBDIR += fx
      SUBDIR += fzy
      SUBDIR += gdiff
      SUBDIR += gi-docgen
@@ -388,6 +389,8 @@
      SUBDIR += pecl-yaml,php82
      SUBDIR += pecl-yaml,php83
      SUBDIR += pecl-yaml,php84
+     # pecl-pspell is only for php84+
+     SUBDIR += pecl-pspell,php84
      SUBDIR += pinfo
      SUBDIR += pod2mdoc
      SUBDIR += podofo

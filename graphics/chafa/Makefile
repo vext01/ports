@@ -1,5 +1,6 @@
 COMMENT =		character art facsimile generator
 DISTNAME =		chafa-1.16.1
+REVISION =		1
 
 SHARED_LIBS +=  	chafa                     5.0 # 10.0
 

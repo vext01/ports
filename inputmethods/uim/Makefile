@@ -10,6 +10,9 @@ PKGNAME-main=		uim-$V
 PKGNAME-gtk=		uim-gtk-$V
 PKGNAME-gtk3=		uim-gtk3-$V
 
+REVISION-main=		0
+REVISION-gtk3=		1
+
 SITES=			https://github.com/uim/uim/releases/download/$V/
 HOMEPAGE=		https://github.com/uim/uim
 
@@ -54,7 +57,7 @@ WANTLIB-gtk += Xau Xdmcp jpeg
 LIB_DEPENDS-gtk=	inputmethods/uim \
 			x11/gtk+2
 
-WANTLIB-gtk3 += ${WANTLIB} ${COMPILER_LIBCXX} execinfo
+WANTLIB-gtk3 += ${WANTLIB} ${COMPILER_LIBCXX}
 WANTLIB-gtk3 += Xcomposite Xcursor Xdamage Xfixes Xi Xinerama
 WANTLIB-gtk3 += Xrandr atk-1.0 atk-bridge-2.0 c cairo cairo-gobject
 WANTLIB-gtk3 += expat ffi gcroots gdk-3 gdk_pixbuf-2.0 gio-2.0
@@ -63,6 +66,8 @@ WANTLIB-gtk3 += gtk-3 harfbuzz pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB-gtk3 += pcre2-8 pixman-1 png pthread uim uim-custom fribidi
 WANTLIB-gtk3 += uim-scm xcb xcb-render xcb-shm z epoxy atspi dbus-1
 WANTLIB-gtk3 += Xau Xdmcp jpeg
+WANTLIB-gtk3 += epoll-shim wayland-client wayland-cursor wayland-egl
+WANTLIB-gtk3 += xkbcommon
 
 LIB_DEPENDS-gtk3=	inputmethods/uim \
 			x11/gtk+3

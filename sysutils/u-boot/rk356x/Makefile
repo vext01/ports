@@ -1,4 +1,4 @@
-VERSION=	2024.01
+VERSION=	2025.07
 REVISION=	0
 
 SOC=		rk356x
@@ -16,6 +16,7 @@ BOARDS=\
 	quartz64-b-rk3566 \
 	radxa-cm3-io-rk3566 \
 	radxa-e25-rk3568 \
+	radxa-zero-3-rk3566 \
 	rock-3a-rk3568 \
 	soquartz-blade-rk3566 \
 	soquartz-cm4-rk3566 \
@@ -23,13 +24,14 @@ BOARDS=\
 
 BUILD_DEPENDS+= devel/arm-none-eabi/gcc,aarch64 \
 		devel/py-elftools \
+		security/gnutls \
 		shells/bash \
 		sysutils/e2fsprogs
 CROSS_COMPILE=	aarch64-none-elf-
 
-RK3566_TPL=	rk3566_ddr_1056MHz_v1.18.bin
-RK3568_TPL=	rk3568_ddr_1560MHz_v1.18.bin
-RK356X_BL31=	rk3568_bl31_v1.43.elf
+RK3566_TPL=	rk3566_ddr_1056MHz_v1.23.bin
+RK3568_TPL=	rk3568_ddr_1560MHz_v1.23.bin
+RK356X_BL31=	rk3568_bl31_v1.44.elf
 
 DISTFILES.rkbin= ${RK3566_TPL} ${RK3568_TPL} ${RK356X_BL31}
 SITES.rkbin=	https://github.com/rockchip-linux/rkbin/raw/master/bin/rk35/

@@ -3,12 +3,12 @@ NOT_FOR_ARCHS =	${BE_ARCHS}
 
 COMMENT =	cross-platform library for building Telegram clients
 
-# upstream tags stable versions, but various clients using this library
-# track "unofficial minor versions" which are only present as commit hashes.
+# upstream sometimes tags stable versions, but various clients track
+# "unofficial minor versions" which are only present as commit hashes.
 GH_ACCOUNT =	tdlib
 GH_PROJECT =	td
-GH_COMMIT =	fb04b8d40e5e3d24c30001af2e9784c91d4606c0
-DISTNAME =	tdlib-1.8.50
+GH_COMMIT =	4269f54e16b9cf564efc2db5bcd29743a2eec6ee
+DISTNAME =	tdlib-1.8.52
 
 CATEGORIES =	net
 

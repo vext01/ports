@@ -2,6 +2,7 @@ COMMENT =	library and QML module for Accounts-SSO and SignOn-SSO
 
 DISTNAME =	kaccounts-integration-${VERSION}
 PKGNAME =	kf6-kaccounts-integration-${VERSION}
+REVISION =	1
 
 CATEGORIES =	net devel
 
@@ -28,8 +29,8 @@ LIB_DEPENDS =	devel/kf6/kcmutils \
 		devel/kf6/kio \
 		devel/kf6/kwallet \
 		devel/kf6/kwidgetsaddons \
-		devel/qcoro,qt6 \
-		net/libaccounts-qt,qt6 \
+		devel/qcoro \
+		net/libaccounts-qt \
 		net/signond-qt6 \
 		x11/qt6/qtdeclarative
 

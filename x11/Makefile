@@ -5,6 +5,7 @@
      SUBDIR += Xdialog
      SUBDIR += abclock
      SUBDIR += adwaita-qt
+     SUBDIR += adwaita-qt,qt6
      SUBDIR += aewm
      SUBDIR += afterstep
      SUBDIR += agar
@@ -35,6 +36,7 @@
      SUBDIR += bspwm
      SUBDIR += bwidget
      SUBDIR += byzi
+     SUBDIR += cde
      SUBDIR += cegui
      SUBDIR += chicago95-theme
      SUBDIR += clipmenu
@@ -234,6 +236,7 @@
      SUBDIR += peksystray
      SUBDIR += pekwm
      SUBDIR += picom
+     SUBDIR += picom-config
      SUBDIR += pidgin-guifications
      SUBDIR += pidgin-libnotify
      SUBDIR += piewm
@@ -258,6 +261,7 @@
      SUBDIR += py-xcbgen
      SUBDIR += py-xlib
      SUBDIR += qdirstat
+     SUBDIR += qt-color-widgets
      SUBDIR += qt5
      SUBDIR += qt5ct
      SUBDIR += qt6

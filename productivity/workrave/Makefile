@@ -1,10 +1,9 @@
 COMMENT=		RSI prevention tool
 
-V=			1.10.52
+V=			1.10.53
 DISTNAME=		workrave-v${V}
 PKGNAME=		workrave-${V}
 WRKDIST=		${WRKDIR}/workrave-${V}
-REVISION=		1
 
 SHARED_LIBS +=  workrave-private-1.0 1.0      # unknown
 SHARED_LIBS +=  workrave-gtk4-private-1.0 0.0      # unknown
@@ -27,6 +26,8 @@ WANTLIB += graphite2 gstreamer-1.0 gthread-2.0 gtk-3 gtk-4 gtkmm-3.0
 WANTLIB += harfbuzz iconv intl jpeg lzma lzo2 m pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pangomm-1.4 pcre2-8 pixman-1 png sigc-2.0
 WANTLIB += tiff xcb xcb-render xcb-shm z zstd
+WANTLIB += Lerc epoll-shim harfbuzz-subset vulkan wayland-client
+WANTLIB += wayland-cursor wayland-egl xkbcommon
 
 SITES=	https://github.com/rcaelers/workrave/releases/download/v${V:S/./_/g}/
 

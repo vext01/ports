@@ -1,10 +1,11 @@
 COMMENT =		fast NumPy array functions written in C
 
-MODPY_DISTV =		1.4.2
+MODPY_DISTV =		1.5.0
 DISTNAME =		bottleneck-${MODPY_DISTV}
 PKGNAME =		py-${DISTNAME:L}
+REVISION =		0
+
 CATEGORIES =		math
-REVISION =		2
 
 MAINTAINER =		Martin Reindl <martin@catai.org>
 
@@ -17,21 +18,16 @@ COMPILER_LANGS =	c
 
 MODULES =		lang/python
 
-RUN_DEPENDS =		math/py-numpy
-BUILD_DEPENDS =		${RUN_DEPENDS}
-
 MODPY_PI =		Yes
-MODPY_SETUPTOOLS =	Yes
+MODPY_PYBUILD =		setuptools
 
-MODPY_PYTEST =	Yes
-TEST_DEPENDS =	devel/py-pluggy \
-		devel/py-nose \
-		devel/py-test
+MODPY_TEST_DIR =	${WRKINST}${MODPY_SITEPKG}
 
-pre-test:
-	@${MODPY_CMD} build_ext --inplace
+BUILD_DEPENDS =		devel/py-versioneer \
+			math/py-numpy
 
-do-test:
-	cd ${WRKSRC} && ${MODPY_BIN} -c "import bottleneck; bottleneck.test()"
+RUN_DEPENDS =		math/py-numpy
+
+TEST_DEPENDS =		devel/py-pluggy
 
 .include <bsd.port.mk>

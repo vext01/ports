@@ -11,7 +11,7 @@ MOZILLA_CODENAME =	browser
 EXTRACT_SUFX =		.tar.xz
 
 PKGNAME =		${TB_PREFIX}-browser-${TB_VERSION:S/a/alpha/}
-DISTNAME =		src-firefox-tor-browser-128.12.0esr-14.5-1-build1
+DISTNAME =		src-firefox-tor-browser-128.14.0esr-14.5-1-build2
 
 FIX_EXTRACT_PERMISSIONS	= Yes
 DISTFILES +=		${DISTNAME}.tar.xz \
@@ -140,7 +140,6 @@ post-patch:
 
 BROWSER_DIR = ${PREFIX}/lib/${BROWSER_NAME}
 TRUEBROWSER_DIR = ${TRUEPREFIX}/lib/${BROWSER_NAME}
-BROWSER_CFG = ${BROWSER_DIR}/${BROWSER_NAME}.cfg
 BROWSER_INI = ${BROWSER_DIR}/distribution/distribution.ini
 
 SUBST_VARS +=		TRUEBROWSER_DIR
@@ -153,10 +152,6 @@ post-install:
 	${INSTALL_DATA_DIR} ${BROWSER_DIR}/browser/defaults/profile
 	${INSTALL_DATA} ${FILESDIR}/bookmarks.html \
 	  ${BROWSER_DIR}/browser/defaults/profile
-	# tor-browser JS config file
-	${INSTALL_DATA} ${FILESDIR}/${BROWSER_NAME}.cfg ${BROWSER_CFG}
-	chown ${SHAREOWN}:${SHAREGRP} ${BROWSER_CFG}
-	chmod ${SHAREMODE} ${BROWSER_CFG}
 	# install distribution.ini file
 	${INSTALL_DATA_DIR} ${BROWSER_DIR}/distribution
 	echo "[Global]\nid=OpenBSD\nversion=${OSREV}\n" > ${BROWSER_INI}

@@ -1,6 +1,6 @@
 COMMENT =	GNU binary utilities
 
-DISTNAME =	binutils-2.44
+DISTNAME =	binutils-2.45
 EXTRACT_SUFX =	.tar.bz2
 
 CATEGORIES =	devel
@@ -35,7 +35,7 @@ CONFIGURE_ARGS +=	--disable-gprof \
 USE_GMAKE =	Yes
 
 post-install:
-	@rm ${PREFIX}/info/bfd.info	# Installed by devel/gdb
+	@rm ${PREFIX}/info/bfd.info
 	@rm -rf ${PREFIX}/*-unknown-openbsd${OSREV}
 
 .include <bsd.port.mk>

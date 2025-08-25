@@ -1,7 +1,6 @@
      SUBDIR =
      SUBDIR += aqbanking
      SUBDIR += baikal
-     SUBDIR += bruce
      SUBDIR += calcurse
      SUBDIR += davical
      SUBDIR += deskzilla
@@ -51,6 +50,7 @@
      SUBDIR += tdl
      SUBDIR += teapot
      SUBDIR += thinkingrock
+     SUBDIR += tickrs
      SUBDIR += timewarrior
      SUBDIR += topydo
      SUBDIR += tudu

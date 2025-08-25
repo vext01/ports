@@ -25,3 +25,13 @@ Index: library/Icinga/Application/ApplicationBootstrap.php
              }
          }
  
+@@ -427,6 +427,9 @@ abstract class ApplicationBootstrap
+         $paths = [];
+ 
+         $configured = getenv('ICINGAWEB_MODULES_DIR');
++        if (! $configured && is_dir($this->baseDir . '/modules')) {
++            $configured = $this->baseDir . '/modules';
++        }
+         if (! $configured) {
+             $configured = $this->config->get('global', 'module_path', $this->baseDir . '/modules');
+         }

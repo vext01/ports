@@ -226,6 +226,7 @@
      SUBDIR += libnet
      SUBDIR += libnice
      SUBDIR += libnids
+     SUBDIR += libnpupnp
      SUBDIR += liboauth
      SUBDIR += libomemo-c
      SUBDIR += liboping
@@ -566,6 +567,7 @@
      SUBDIR += py-IOSXR
      SUBDIR += py-IP
      SUBDIR += py-aiodns
+     SUBDIR += py-aiomqtt
      SUBDIR += py-amqp
      SUBDIR += py-anyio
      SUBDIR += py-apprise
@@ -670,8 +672,10 @@
      SUBDIR += ruby-connection_pool
      SUBDIR += ruby-eventmachine,ruby33
      SUBDIR += ruby-eventmachine,ruby34
-     SUBDIR += ruby-googleapis-common-protos-types
-     SUBDIR += ruby-grpc
+     SUBDIR += ruby-googleapis-common-protos-types,ruby33
+     SUBDIR += ruby-googleapis-common-protos-types,ruby34
+     SUBDIR += ruby-grpc,ruby33
+     SUBDIR += ruby-grpc,ruby34
      SUBDIR += ruby-msgpack,ruby33
      SUBDIR += ruby-msgpack,ruby34
      SUBDIR += ruby-net-telnet
@@ -686,7 +690,7 @@
      SUBDIR += serf
      SUBDIR += si
      SUBDIR += sic
-     SUBDIR += signond
+     SUBDIR += signond-qt6
      SUBDIR += silc-client
      SUBDIR += silc-server
      SUBDIR += silc-server,operops

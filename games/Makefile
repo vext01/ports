@@ -196,6 +196,7 @@
      SUBDIR += lincity-ng
      SUBDIR += lostpixels
      SUBDIR += love
+     SUBDIR += luanti
      SUBDIR += luasteam
      SUBDIR += lugaru
      SUBDIR += lwjgl
@@ -208,7 +209,6 @@
      SUBDIR += micropolis
      SUBDIR += mightymike
      SUBDIR += minecraft
-     SUBDIR += minetest
      SUBDIR += mirrormagic
      SUBDIR += mnemosyne
      SUBDIR += moon-buggy

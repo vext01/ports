@@ -1,11 +1,10 @@
 COMMENT=	themed window manager
 
-V=		1.0.30
+V=		1.0.31
 DISTNAME=	e16-$V
 PKGNAME=	enlightenment-$V
 DOCS=		e16-docs-0.16.8.0.2
 THEMES=		e16-themes-1.0.3
-REVISION=	0
 
 CATEGORIES=	x11
 
@@ -19,7 +18,7 @@ COMPILER=	base-clang ports-gcc
 
 WANTLIB += ${COMPILER_LIBCXX} FLAC ICE Imlib2 SM X11 X11-xcb Xcomposite
 WANTLIB += Xdamage Xext Xfixes Xft Xinerama Xrandr Xrender audiofile
-WANTLIB += c expat ffi fontconfig freetype fribidi gio-2.0 glib-2.0
+WANTLIB += c dbus-1 expat ffi fontconfig freetype fribidi gio-2.0 glib-2.0
 WANTLIB += gmodule-2.0 gobject-2.0 graphite2 harfbuzz iconv intl
 WANTLIB += m ogg pango-1.0 pangoft2-1.0 pangoxft-1.0 pcre2-8 sndio
 WANTLIB += xcb xcb-shm z
@@ -33,7 +32,8 @@ DISTFILES=	${DISTNAME}.tar.gz \
 LIB_DEPENDS=	devel/glib2 \
 		devel/libaudiofile \
 		devel/pango \
-		graphics/imlib2
+		graphics/imlib2 \
+		x11/dbus
 
 RUN_DEPENDS=	devel/desktop-file-utils
 

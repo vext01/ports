@@ -172,6 +172,9 @@ post-install:
 	${SUBST_CMD} ${PREFIX}/share/texmf-dist/web2c/texmfcnf.lua
 	${SUBST_CMD} ${PREFIX}/share/texmf-dist/scripts/context/lua/mtxrun.lua
 	${SUBST_CMD} ${PREFIX}/share/texmf-dist/tex/context/base/mkiv/data-res.lua
+	# pdfjam doesn't work under /bin/sh any more:
+	# https://github.com/pdfjam/pdfjam/issues/99
+	${SUBST_CMD} ${PREFIX}/share/texmf-dist/scripts/pdfjam/pdfjam
 
 
 # The following targets are for development only and require Python3.

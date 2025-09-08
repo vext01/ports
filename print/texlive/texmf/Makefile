@@ -131,8 +131,8 @@ do-install: tl-symlinks-main tl-symlinks-full tl-symlinks-context
 	#
 	# Then you can tar them up and host them as the pregen tarball.
 	#
-	# (Don't forget to remove ls-R files, log files and the luametatex cache
-	# before making the tarball).
+	# (Don't forget to remove ls-R files, log files and
+	# luametatex-cache/context/<hash>/trees before making the tarball).
 	mv ${WRKDIR}/texmf-var ${PREFIX}/share
 
 	# Put manuals in the right place.

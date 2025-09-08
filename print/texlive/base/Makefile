@@ -11,8 +11,6 @@ COMMENT-synctex =	synctex for TeXLive typesetting distribution
 DISTNAME =		texlive-${V}.2-source
 PKGNAME =		texlive_base-${V}
 
-REVISION-main =		0
-
 MULTI_PACKAGES =	-main -mktexlsr -synctex
 PKGNAME-mktexlsr =	texlive_mktexlsr-${V}
 PKGNAME-main =		${PKGNAME}
@@ -48,9 +46,9 @@ RUN_DEPENDS-main =	graphics/libwebp \
 			print/ps2eps \
 			print/psutils \
 			print/t1utils \
+			texlive_texmf-buildset-${V}:print/texlive/texmf,-buildset \
 			devel/desktop-file-utils \
-			${BASE_PKGPATH},-synctex \
-			texlive_texmf-buildset-${V}:print/texlive/texmf,-buildset
+			${BASE_PKGPATH},-synctex
 
 LIB_DEPENDS-main =	converters/libiconv \
 			graphics/png \

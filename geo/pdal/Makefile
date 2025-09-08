@@ -1,11 +1,11 @@
 COMMENT =	translator library for point cloud formats
 
-V =	2.9.0
+V =	2.9.2
 DISTNAME =	PDAL-${V}-src
 PKGNAME =	pdal-${V}
 EXTRACT_SUFX =	.tar.bz2
 
-SHARED_LIBS +=  pdalcpp 5.0 # 19.0 from PDAL_SOLIB defines in cmake/libraries.cmake
+SHARED_LIBS +=  pdalcpp 6.0 # 19.0 from PDAL_SOLIB defines in cmake/libraries.cmake
 
 CATEGORIES =	geo devel textproc
 
@@ -28,9 +28,11 @@ LIB_DEPENDS =	${MODPY_LIB_DEPENDS} \
 		net/curl
 
 WANTLIB +=	c crypto curl execinfo gdal geotiff m proj pq pthread
-WANTLIB +=	ssl xml2 z zstd
+WANTLIB +=	ssl xml2 z
 WANTLIB += ${COMPILER_LIBCXX}
 
-BUILD_DEPENDS +=	devel/gtest
+# https://github.com/PDAL/PDAL/pull/4801
+CONFIGURE_ARGS =	-DWITH_TESTS=OFF
+#BUILD_DEPENDS +=	devel/gtest
 
 .include <bsd.port.mk>

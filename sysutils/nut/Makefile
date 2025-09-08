@@ -3,22 +3,20 @@ COMMENT-cgi=	CGIs for monitoring Nut-based UPSs
 COMMENT-snmp=	driver for monitoring UPS via SNMP
 COMMENT-xml=	driver for monitoring UPS via XML/HTTP
 
-V=		2.8.3
+V=		2.8.4
 DISTNAME=	nut-${V:C/-rc.*//}
 PKGNAME=	nut-${V:S/-rc/rc/}
 SITES=		https://github.com/networkupstools/nut/releases/download/v$V/
-
-REVISION=	1
 
 PKGNAME-main=	${PKGNAME}
 PKGNAME-cgi=	${PKGNAME:S/-/-cgi-/}
 PKGNAME-snmp=	${PKGNAME:S/-/-snmp-/}
 PKGNAME-xml=	${PKGNAME:S/-/-xml-/}
 
-SHARED_LIBS +=  upsclient            4.1      # .6.2
-SHARED_LIBS +=  nutclient            1.1      # .2.2
+SHARED_LIBS +=  upsclient            5.0      # .7.0
+SHARED_LIBS +=  nutclient            2.0      # .2.2
 SHARED_LIBS +=  nutclientstub        1.0      # .1.1
-SHARED_LIBS +=  nutscan              3.1      # .2.6
+SHARED_LIBS +=  nutscan              4.0      # .4.0
 
 CATEGORIES=	sysutils
 HOMEPAGE=	https://networkupstools.org/
@@ -31,7 +29,7 @@ COMPILER=	base-clang ports-gcc base-gcc
 COMMON +=	c crypto kvm pthread
 WANTLIB-main +=	${COMMON} ltdl m ssl ${COMPILER_LIBCXX} usb-1.0
 WANTLIB-xml +=	${COMMON} expat iconv intl neon proxy ssl z \
-		nghttp2 nghttp3 ngtcp2 ngtcp2_crypto_quictls
+		nghttp2 nghttp3 ngtcp2 ngtcp2_crypto_libressl
 WANTLIB-snmp +=	${COMMON} m netsnmp ssl
 WANTLIB-cgi +=	${COMMON} X11 expat fontconfig iconv intl
 WANTLIB-cgi +=	freetype gd jpeg m png ssl upsclient xcb z

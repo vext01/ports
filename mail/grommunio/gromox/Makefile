@@ -3,8 +3,9 @@ ONLY_FOR_ARCHS=	${LLD_ARCHS}
 
 COMMENT-main=	groupware server backend with RPC, IMAP, POP3 support
 COMMENT-mapi=	gromox MAPI extensions for PHP
+REVISION-mapi=	0
 
-V=		2.47
+V=		2.48
 
 # required for mime.types
 MAILCAP_V=	2-1-54
@@ -16,7 +17,7 @@ PKGNAME-mapi=	gromox-mapi-${V}
 
 GH_ACCOUNT=	grommunio
 GH_PROJECT=	gromox
-GH_COMMIT=	e4156fb0be5d6416a2855f3e2e5dc03d217d6730
+GH_COMMIT=	4ea11a212632f4420187ecdc147626166c237eaa
 
 SITES.a=	https://pagure.io/mailcap/archive/r${MAILCAP_V}/
 DISTFILES.a=	mailcap-r${MAILCAP_V}.tar.gz
@@ -72,7 +73,7 @@ BUILD_DEPENDS=	devel/cppunit \
 WANTLIB += ${COMPILER_LIBCXX} HX iconv jsoncpp m pthread tinyxml2 vmime zstd
 
 WANTLIB-main += ${WANTLIB} c cares crypto curl fmt icudata icuuc
-WANTLIB-main += lber ldap lzma mariadb nghttp2 nghttp3 ngtcp2 ngtcp2_crypto_quictls
+WANTLIB-main += lber ldap lzma mariadb nghttp2 nghttp3 ngtcp2 ngtcp2_crypto_libressl
 WANTLIB-main += sasl2 sqlite3 ssl ssl xml2 xxhash z
 
 # Do not substitute MODULE_NAME

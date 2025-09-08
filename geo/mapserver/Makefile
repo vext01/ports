@@ -13,6 +13,7 @@ PKGNAME-utils=	mapserver-utils-${V:S/-//}
 PKGNAME-php=	php-mapscript-${V:S/-//}
 PKGNAME-perl=	p5-mapscript-${V:S/-//}
 PKGNAME-python=	py3-mapscript-${V:S/-//}
+REVISION-php=	1
 REVISION=	0
 
 SHARED_LIBS +=	mapserver 8.0
@@ -45,8 +46,10 @@ RUN_DEPENDS-php =	${MODPHP_RUN_DEPENDS}
 RUN_DEPENDS-python =	${MODPY_RUN_DEPENDS}
 RUN_DEPENDS-utils =	# empty
 
-BUILD_DEPENDS +=	devel/swig databases/postgresql,-server
-BUILD_DEPENDS +=	devel/py-pip
+BUILD_DEPENDS +=	databases/postgresql,-server \
+			devel/swig \
+			devel/py-pip \
+			devel/py-setuptools
 
 LIB_DEPENDS=	devel/proj \
 		devel/fribidi \

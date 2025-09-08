@@ -1,3 +1,5 @@
+DPB_PROPERTIES =	parallel
+
 ONLY_FOR_ARCHS =	amd64 i386
 
 COMMENT =		open source implementation of TES III: Morrowind
@@ -7,7 +9,7 @@ GH_ACCOUNT =		OpenMW
 GH_PROJECT =		openmw
 GH_TAGNAME =		openmw-$V
 DISTNAME =		openmw-$V
-REVISION =		1
+REVISION =		2
 
 DISTFILES.a = 		e75adf86f91eb3082220085e42dda62679f9a3ea.zip
 DIST_SUBDIR =		openmw

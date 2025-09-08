@@ -1,5 +1,7 @@
 ONLY_FOR_ARCHS =	aarch64
 
+DPB_PROPERTIES =	parallel
+
 COMMENT =	Arm compute library
 
 V =		52.3.0
@@ -13,7 +15,7 @@ CATEGORIES =	devel
 
 HOMEPAGE =	https://github.com/ARM-software/ComputeLibrary
 
-MAINTAINER = 	Kevin Lo <kevlo@openbsd.org>
+MAINTAINER =	Kevin Lo <kevlo@openbsd.org>
 
 GRAPH_SO_V =	2.7
 COMPUTE_SO_V =	4.3
@@ -37,8 +39,9 @@ MODULES =	devel/scons
 MAKE_ENV =	CC="${CC}" \
 		CXX="${CXX}"
 
-do-build:
-	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MODSCONS_BIN} ${MODSCONS_FLAGS}
+# avoid setting scons.port.mk's default MODSCONS_ENV variables, which
+# break the build of this port
+MODSCONS_ENV =
 
 do-install:
 .for dir in arm_compute support utils

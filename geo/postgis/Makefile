@@ -1,6 +1,7 @@
 USE_NOBTCFI-aarch64 =	Yes# fortran
 
-V =	3.5.3
+V =	3.6.0
+REVISION =	0
 COMMENT=	geographic objects support for PostgreSQL
 DISTNAME=	postgis-${V}
 CATEGORIES=	geo databases
@@ -16,13 +17,13 @@ WANTLIB += c crypto curl expat freexl gdal geos geos_c geotiff gif iconv intl
 WANTLIB += jpeg json-c lz4 lzma m nghttp2 openjp2 pcre2-8 png pq>=5.3 protobuf-c zstd
 WANTLIB += proj pthread qhull_r spatialite sqlite3 ssl ${COMPILER_LIBCXX} tiff webp xml2 z
 WANTLIB += hdf5 hdf5_hl minizip netcdf rttopo execinfo fontconfig freetype lcms2 poppler
-WANTLIB += nghttp3 ngtcp2 ngtcp2_crypto_quictls jxl jxl_cms jxl_threads zip
+WANTLIB += nghttp3 ngtcp2 ngtcp2_crypto_libressl jxl jxl_cms jxl_threads zip
 WANTLIB += archive b2 brotlicommon brotlidec brotlienc bz2 hwy sharpyuv blosc deflate
 WANTLIB += Lerc aom arrow arrow_acero arrow_dataset avif dav1d parquet snappy thrift
 WANTLIB += boost_atomic-mt boost_chrono-mt boost_filesystem-mt
 WANTLIB += boost_program_options-mt boost_serialization-mt boost_system-mt
 WANTLIB += boost_thread-mt boost_timer-mt boost_unit_test_framework-mt
-WANTLIB += SFCGAL gmp gmpxx mpfr
+WANTLIB += SFCGAL gmp gmpxx mpfr aec sz
 
 COMPILER =		base-clang ports-gcc base-gcc
 

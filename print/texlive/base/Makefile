@@ -8,6 +8,7 @@ COMMENT-synctex =	synctex for TeXLive typesetting distribution
 #
 # https://tug.org/pipermail/tldistro/2025q1/000512.html
 # https://tug.org/pipermail/tldistro/2025q1/000517.html
+SITES =			https://theunixzoo.co.uk/distfiles/
 DISTNAME =		texlive-${V}.2-source
 PKGNAME =		texlive_base-${V}
 

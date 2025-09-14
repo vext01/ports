@@ -5,9 +5,6 @@ PKGNAME =	luametatex-${V}
 
 # note: upstream forgot to tag this release it seems.
 DIST_TUPLE =	github contextgarden luametatex 76be136f8c8c4d75e53df3a17e036e81ba984525 .
-# GH_ACCOUNT =	contextgarden
-# GH_PROJECT =	luametatex
-# GH_COMMIT =	76be136f8c8c4d75e53df3a17e036e81ba984525
 
 
 CATEGORIES =	print textproc

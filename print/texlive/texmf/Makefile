@@ -45,6 +45,9 @@ RUN_DEPENDS-main +=	texlive_base->=${V}:print/texlive/base,-main \
 RUN_DEPENDS-full =	${FULLPKGNAME-main}:print/texlive/texmf,-main \
 			${MODPY_RUN_DEPENDS} \
 			${_MODLUA_RUNDEPENDS}
+# While pdfjam needs bash, depend upon bash:
+RUN_DEPENDS-full +=	shells/bash
+
 # XXX: Can we make context be further towards the top dep chain? Can it depend
 # on only the buildset?
 RUN_DEPENDS-context +=	${FULLPKGNAME-full}:print/texlive/texmf,-full \

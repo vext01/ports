@@ -8,7 +8,6 @@ COMMENT-synctex =	synctex for TeXLive typesetting distribution
 #
 # https://tug.org/pipermail/tldistro/2025q1/000512.html
 # https://tug.org/pipermail/tldistro/2025q1/000517.html
-SITES =			https://theunixzoo.co.uk/distfiles/
 DISTNAME =		texlive-${V}.2-source
 PKGNAME =		texlive_base-${V}
 
@@ -17,11 +16,11 @@ PKGNAME-mktexlsr =	texlive_mktexlsr-${V}
 PKGNAME-main =		${PKGNAME}
 PKGNAME-synctex =	texlive_synctex-${V}
 
-DISTFILES =		${DISTNAME}${EXTRACT_SUFX} \
-			texlive-${DIST_V}-extra${EXTRACT_SUFX}
-DISTFILES.mk =		mktexlsr-${V}.gz
+DISTFILES =		texlive-${DIST_V}-extra${EXTRACT_SUFX}
+DISTFILES.zoo =		${DISTNAME}${EXTRACT_SUFX} \
+			mktexlsr-${V}.gz
 
-SITES.mk =		https://theunixzoo.co.uk/distfiles/
+SITES.zoo =		https://theunixzoo.co.uk/distfiles/
 
 SHARED_LIBS =		kpathsea	9.1 # 10.1
 SHARED_LIBS +=		ptexenc		6.2 # 6.1

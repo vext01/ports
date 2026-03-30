@@ -12,7 +12,7 @@ PKGNAME-synctex =	texlive_synctex-${V}
 
 DISTFILES =		${DISTNAME}${EXTRACT_SUFX} \
 			texlive-${DIST_V}-extra${EXTRACT_SUFX}
-#DISTFILES.zoo =		mktexlsr-${V}.gz
+DISTFILES.zoo =		mktexlsr-${V}.gz
 
 SITES.zoo =		https://theunixzoo.co.uk/distfiles/
 
@@ -23,9 +23,8 @@ SHARED_LIBS +=		texlua53        0.1 # 8.6
 
 WANTLIB-main += ${COMPILER_LIBCXX} ICE Lerc SM X11 Xau Xaw Xdmcp Xext Xi
 WANTLIB-main += Xmu Xpm Xrender Xt c cairo expat fontconfig freetype
-WANTLIB-main += gd glib-2.0 graphite2 harfbuzz iconv icudata icui18n
-WANTLIB-main += icuio icuuc intl jpeg kpathsea lzma m paper pcre2-8
-#WANTLIB-main += icuio icuuc intl jpeg lzma m paper pcre2-8
+WANTLIB-main += gd glib-2.0 graphite2 harfbuzz harfbuzz-subset iconv icudata
+WANTLIB-main += icui18n icuio icuuc intl jpeg kpathsea lzma m paper pcre2-8
 WANTLIB-main += pixman-1 png sharpyuv tiff webp xcb xcb-render xcb-shm
 WANTLIB-main += z zstd zzip
 
@@ -200,7 +199,6 @@ post-install: tl-symlinks-buildset
 	# `bin/mktexlsr` is a symlink to a shell script in the texmf tree.
 	# Rather than add the texmf distfile here (which would slow down the
 	# build a lot), I've hosted that one script, which we install now.
-	# XXX this next
 	${INSTALL_DATA_DIR} ${PREFIX}/share/texmf-dist/scripts/texlive
 	${INSTALL_SCRIPT} ${WRKDIR}/mktexlsr-${V} \
 		${PREFIX}/share/texmf-dist/scripts/texlive/mktexlsr

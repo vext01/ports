@@ -15,7 +15,7 @@ DISTNAME =		texlive-${DIST_V}-texmf
 SITES.pregen =		http://theunixzoo.co.uk/distfiles/
 DISTFILES =		${DISTNAME}${EXTRACT_SUFX} \
 			texlive-${DIST_V}-extra${EXTRACT_SUFX}
-DISTFILES.pregen = 	texmf-var-pregen-${V}${EXTRACT_SUFX}
+#DISTFILES.pregen = 	texmf-var-pregen-${V}${EXTRACT_SUFX}
 
 PKGNAME-main =		texlive_texmf-minimal-${V}
 PKGNAME-full =		texlive_texmf-full-${V}

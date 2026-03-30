@@ -202,7 +202,6 @@ bin/lualatex
 bin/luaotfload-tool
 @bin bin/luatex
 bin/lwarpmk
-bin/m-tx
 @bin bin/mag
 bin/make4ht
 bin/makedtx
@@ -313,8 +312,10 @@ bin/rubibtex
 bin/rubikrotation
 bin/rumakeindex
 bin/rungs
+bin/runtexfile
 bin/runtexshebang
 @bin bin/scor2prt
+bin/show-pdf-tags
 bin/simpdftex
 @bin bin/sjisconv
 bin/sjislatex
@@ -386,6 +387,7 @@ bin/updvitomp
 @bin bin/upmendex
 @bin bin/upmpost
 @bin bin/uppltotf
+bin/uptex
 @bin bin/uptftopl
 bin/urlbst
 @bin bin/vftovp
@@ -404,6 +406,7 @@ bin/webquiz
 bin/xdvi
 @bin bin/xdvi-xaw
 @bin bin/xdvipdfmx
+@bin bin/xdvipsk
 bin/xelatex-unsafe
 @bin bin/xetex
 bin/xetex-unsafe

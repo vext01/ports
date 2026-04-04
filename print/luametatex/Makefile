@@ -1,6 +1,6 @@
 COMMENT =	TeX engine for ConTeXt
 
-V =		2.11.06
+V =		2.11.08
 PKGNAME =	luametatex-${V}
 
 # note: upstream forgot to tag this release it seems.

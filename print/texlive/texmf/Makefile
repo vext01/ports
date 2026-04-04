@@ -23,10 +23,6 @@ PKGNAME-docs =		texlive_texmf-docs-${V}
 PKGNAME-context =	texlive_texmf-context-${V}
 PKGNAME-buildset =	texlive_texmf-buildset-${V}
 
-REVISION-full =		0
-REVISION-main =		0
-REVISION-buildset =	0
-
 NO_BUILD =		Yes
 NO_TEST =		Yes
 PKG_ARCH =		*
@@ -45,22 +41,23 @@ MODTK_VERSION =		8.6
 
 .include "adj.mk"
 
-RUN_DEPENDS-main +=	texlive_base->=${V}:print/texlive/base,-main \
-			${FULLPKGNAME-buildset}:print/texlive/texmf,-buildset
-RUN_DEPENDS-full =	${FULLPKGNAME-main}:print/texlive/texmf,-main \
-			${MODPY_RUN_DEPENDS} \
-			${MODTK_RUN_DEPENDS} \
-			${_MODLUA_RUNDEPENDS}
-# While pdfjam needs bash, depend upon bash:
-RUN_DEPENDS-full +=	shells/bash
-
-# XXX: Can we make context be further towards the top dep chain? Can it depend
-# on only the buildset?
-RUN_DEPENDS-context +=	${FULLPKGNAME-full}:print/texlive/texmf,-full \
-			print/luametatex>=2.11.01
-RUN_DEPENDS-docs +=	texlive_base->=${V}:print/texlive/base,-main \
-			x11/p5-Tk
-RUN_DEPENDS-buildset +=	texlive_mktexlsr->=${V}:print/texlive/base,-mktexlsr
+# XXX put back depends
+# RUN_DEPENDS-main +=	texlive_base->=${V}:print/texlive/base,-main \
+# 			${FULLPKGNAME-buildset}:print/texlive/texmf,-buildset
+# RUN_DEPENDS-full =	${FULLPKGNAME-main}:print/texlive/texmf,-main \
+# 			${MODPY_RUN_DEPENDS} \
+# 			${MODTK_RUN_DEPENDS} \
+# 			${_MODLUA_RUNDEPENDS}
+# # While pdfjam needs bash, depend upon bash:
+# RUN_DEPENDS-full +=	shells/bash
+#
+# # XXX: Can we make context be further towards the top dep chain? Can it depend
+# # on only the buildset?
+# RUN_DEPENDS-context +=	${FULLPKGNAME-full}:print/texlive/texmf,-full \
+# 			print/luametatex>=2.11.01
+# RUN_DEPENDS-docs +=	texlive_base->=${V}:print/texlive/base,-main \
+# 			x11/p5-Tk
+# RUN_DEPENDS-buildset +=	texlive_mktexlsr->=${V}:print/texlive/base,-mktexlsr
 
 MULTI_PACKAGES =	-context -docs -full -main -buildset
 
@@ -142,7 +139,8 @@ do-install: tl-symlinks-main tl-symlinks-full tl-symlinks-context
 	#
 	# (Don't forget to remove ls-R files, log files and
 	# luametatex-cache/context/<hash>/trees before making the tarball).
-	mv ${WRKDIR}/texmf-var ${PREFIX}/share
+	# XXX
+	#mv ${WRKDIR}/texmf-var ${PREFIX}/share
 
 	# Put manuals in the right place.
 	#

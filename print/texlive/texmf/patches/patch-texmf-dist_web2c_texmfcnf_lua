@@ -9,7 +9,7 @@ Index: texmf-dist/web2c/texmfcnf.lua
 +--
 +-- Note that in OpenBSD, where we use the old teTeX path convention, and
 +-- therefore selfauto does not work.
-+local distribution_path = "${TRUEPREFIX}/texmf-dist"
++local distribution_path = "${TRUEPREFIX}/share/texmf-dist"
  
  -- Where ConTeXt should store any caches. There is a single "system" folder for
  -- the entire computer, and this folder is typically only writable by
@@ -25,7 +25,7 @@ Index: texmf-dist/web2c/texmfcnf.lua
  -- same meaning as above. ConTeXt will never write to or otherwise modify these
  -- files itself.
 -local system_data = "selfautoparent:../texmf-local"
-+local system_data = "${TRUEPREFIX}/texmf-local"
++local system_data = "${TRUEPREFIX}/share/texmf-local"
  local user_data   = "home:texmf"
  
  -- The location of non-TeX files optionally used by ConTeXt. Different paths are

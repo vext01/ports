@@ -387,7 +387,6 @@ bin/updvitomp
 @bin bin/upmendex
 @bin bin/upmpost
 @bin bin/uppltotf
-bin/uptex
 @bin bin/uptftopl
 bin/urlbst
 @bin bin/vftovp
@@ -445,4 +444,3 @@ ${P5SITE}/TeXLive/TLUtils.pm
 share/applications/xdvi.desktop
 share/doc/pkg-readmes/${PKGSTEM}
 @tag update-desktop-database
-share/texmf-dist/

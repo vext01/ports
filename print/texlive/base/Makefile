@@ -40,9 +40,9 @@ RUN_DEPENDS-main =	graphics/libwebp \
 			print/ps2eps \
 			print/psutils \
 			print/t1utils \
-			devel/desktop-file-utils
-#${BASE_PKGPATH},-synctex
-# texlive_texmf-buildset-${V}:print/texlive/texmf,-buildset \
+			devel/desktop-file-utils \
+			${BASE_PKGPATH},-synctex \
+			texlive_texmf-buildset-${V}:print/texlive/texmf,-buildset
 
 LIB_DEPENDS-main =	converters/libiconv \
 			graphics/png \
@@ -177,6 +177,10 @@ post-install: tl-symlinks-buildset
 
 	# Users should not use tlmgr (tex live package manager)
 	rm ${PREFIX}/bin/tlmgr
+
+	# The build installs `uptex` which conflicts with the symlink installed
+	# by the texmf packages.
+	rm ${PREFIX}/bin/uptex
 
 	# translate some sylinks from ../texmf* to ../share/texmf*
 	for link in `find ${PREFIX}/bin -type l`; do \

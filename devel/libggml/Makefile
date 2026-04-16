@@ -2,13 +2,15 @@ COMMENT=		tensor library for machine learning
 
 GH_ACCOUNT=		ggml-org
 GH_PROJECT=		ggml
-GH_TAGNAME =		v0.9.8
+GH_TAGNAME =		v0.9.11
 PKGNAME=		lib${DISTNAME}
 
-SHARED_LIBS +=		ggml 3.5
-SHARED_LIBS +=		ggml-base 3.5
+SHARED_LIBS +=		ggml 3.7
+SHARED_LIBS +=		ggml-base 3.7
 
 CATEGORIES=		devel
+
+MAINTAINER =		Kirill A. Korinsky <kirill@korins.ky>
 
 # MIT
 PERMIT_PACKAGE=	Yes

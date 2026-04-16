@@ -2,7 +2,7 @@ COMMENT=	Berkeley Internet Name Daemon: DNS server and tools
 
 # Second digits: odd numbers devel, even numbers stable,
 # ESV branched occasionally.  9.18.x is ESV.
-V=		9.20.21
+V=		9.20.22
 SUBST_VARS+=	V
 PORTROACH=	limitw:1,even
 EXTRACT_SUFX=	.tar.xz
@@ -24,6 +24,7 @@ MAINTAINER=	Stuart Henderson <stu.ports@spacehopper.org>
 # MPL 2.0
 PERMIT_PACKAGE=	Yes
 
+# uses pledge()
 WANTLIB += c crypto execinfo iconv idn2 json-c m nghttp2
 WANTLIB += pthread ssl unistring urcu urcu-cds urcu-common uv
 WANTLIB += xml2 z

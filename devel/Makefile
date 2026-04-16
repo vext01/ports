@@ -8,6 +8,7 @@
      SUBDIR += afl++
      SUBDIR += ald
      SUBDIR += alex
+     SUBDIR += aml
      SUBDIR += angr
      SUBDIR += apache-ant
      SUBDIR += apktool
@@ -341,6 +342,7 @@
      SUBDIR += libpeas2
      SUBDIR += libplist
      SUBDIR += libproplist
+     SUBDIR += libscfg
      SUBDIR += libsigc++-2
      SUBDIR += libsigc++30
      SUBDIR += libsigsegv
@@ -2058,6 +2060,7 @@
      SUBDIR += uuid
      SUBDIR += uv
      SUBDIR += valgrind
+     SUBDIR += vali
      SUBDIR += vanessa
      SUBDIR += vim-command-t
      SUBDIR += vim-taglist
@@ -2084,6 +2087,7 @@
      SUBDIR += yyjson
      SUBDIR += z80ex
      SUBDIR += zeal
+     SUBDIR += zizmor
      SUBDIR += zmac
      SUBDIR += zug
 

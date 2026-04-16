@@ -1,11 +1,15 @@
 COMMENT =		MTProxy for Telegram
 CATEGORIES =		net
-DIST_TUPLE =		github	telemt	telemt	3.3.31	.
+DIST_TUPLE =		github	telemt	telemt	3.4.0	.
 
 MAINTAINER =		Klemens Nanni <kn@openbsd.org>
 
 # TELEMT PL 3
 PERMIT_PACKAGE =	Yes
+
+# C1x
+COMPILER =		base-clang ports-gcc
+COMPILER_LANGS =	c
 
 WANTLIB =		${MODCARGO_WANTLIB} m
 

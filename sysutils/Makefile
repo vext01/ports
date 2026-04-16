@@ -65,6 +65,7 @@
      SUBDIR += coreutils
      SUBDIR += cpdup
      SUBDIR += cpuid
+     SUBDIR += cpuid-tycho
      SUBDIR += crashme
      SUBDIR += croc
      SUBDIR += crust
@@ -250,7 +251,6 @@
      SUBDIR += ncal
      SUBDIR += ncdu
      SUBDIR += neofetch
-     SUBDIR += nix
      SUBDIR += nnn
      SUBDIR += nnn,nerd
      SUBDIR += node_exporter
@@ -458,6 +458,7 @@
      SUBDIR += ssl_exporter
      SUBDIR += sslmate
      SUBDIR += stan
+     SUBDIR += starship
      SUBDIR += stow
      SUBDIR += stress
      SUBDIR += stripe-cli

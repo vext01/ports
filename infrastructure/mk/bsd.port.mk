@@ -1,6 +1,6 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4 sw=4 filetype=make:
-#	$OpenBSD: bsd.port.mk,v 1.1647 2026/01/17 22:30:08 kn Exp $
+#	$OpenBSD: bsd.port.mk,v 1.1649 2026/04/01 15:14:57 thfr Exp $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
 #	This file is in the public domain.

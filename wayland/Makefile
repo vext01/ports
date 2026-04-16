@@ -10,13 +10,16 @@
      SUBDIR += gtkgreet
      SUBDIR += gtk4-layer-shell
      SUBDIR += havoc
+     SUBDIR += kanshi
      SUBDIR += labwc
      SUBDIR += libei
      SUBDIR += libevdev-openbsd
      SUBDIR += libinput-openbsd
+     SUBDIR += mango
      SUBDIR += niri
      SUBDIR += plasma-wayland-protocols
      SUBDIR += regreet
+     SUBDIR += scenefx
      SUBDIR += slurp
      SUBDIR += sway
      SUBDIR += swaybg

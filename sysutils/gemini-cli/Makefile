@@ -1,6 +1,6 @@
 COMMENT=		Gemini AI agent CLI
 
-V=			0.35.0
+V=			0.37.1
 DISTNAME=		gemini-cli-${V}
 
 CATEGORIES=		sysutils misc devel
@@ -49,15 +49,13 @@ tarball: package.json
 	@install -d ${DWRKDIST}/{bin,lib/node_modules/@google}
 	@mv ${DWRKDIST}/node_modules/@google/gemini-cli \
 		${DWRKDIST}/lib/node_modules/@google/
-	@ln -s ../lib/node_modules/@google/gemini-cli/dist/index.js \
-		${DWRKDIST}/bin/gemini
 	@rm -r ${DWRKDIST}/{node_modules,package.json,package-lock.json}
 	@cd ${DWRKDIR} && tar czf ${DISTNAME}${EXTRACT_SUFX} ${DISTNAME}
 	@echo "===> distfile available at:"
 	@echo ${DWRKDIR}/${DISTNAME}${EXTRACT_SUFX}
 
 pre-configure:
-	${SUBST_CMD} ${WRKSRC}/lib/node_modules/@google/gemini-cli/dist/index.js
+	${SUBST_CMD} ${WRKSRC}/lib/node_modules/@google/gemini-cli/bundle/gemini.js
 
 do-build:
 # build native modules for node-pty
@@ -68,7 +66,11 @@ do-build:
 
 do-install:
 	cp -a ${WRKSRC}/* ${PREFIX}
-	chmod +x ${PREFIX}/lib/node_modules/@google/gemini-cli/dist/index.js
+	ln -sf ${TRUEPREFIX}/lib/node_modules/@google/gemini-cli/bundle/gemini.js \
+		$${PREFIX}/bin/gemini
+	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/gemini-cli
+	${INSTALL_DATA} ${FILESDIR}/settings.json \
+		${PREFIX}/share/examples/gemini-cli/
 #	rm ${PREFIX}/lib/node_modules/@google/gemini-cli/dist/*.tgz \
 #		${PREFIX}/lib/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/*.tgz
 

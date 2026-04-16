@@ -1,7 +1,7 @@
 #! /usr/bin/perl
 
 # ex:ts=8 sw=4:
-# $OpenBSD: Quirks.pm,v 1.1797 2026/03/25 05:31:00 kmos Exp $
+# $OpenBSD: Quirks.pm,v 1.1799 2026/04/15 13:15:55 sthen Exp $
 #
 # Copyright (c) 2009 Marc Espie <espie@openbsd.org>
 #
@@ -1063,6 +1063,9 @@ setup_obsolete_reason(
 	3 => 'usmb',
 	2 => 'libgdata',
 	3 => 'py3-cookies',
+	6 => 'nix',
+	46 => 'exim',
+	46 => 'exim-eximon',
 );
 
 # these should be pkgnames, there was some hope that pkg_add might later
@@ -1117,6 +1120,7 @@ my $obsolete_message = {
 	15 => "use rspamd's internal milter support instead",
 	16 => "dependencies for recent versions can't be met",
 	17 => "outdated port, security problems in the last ported version",
+	46 => "setuid-root software with a track record of security issues",
 	47 => "DNS network daemon running as root and not using random source ports. use DNS64 support in unbound or isc-bind",
 	48 => "1.x does not support current PHP, 2.x is tricky to package, see https://github.com/leenooks/phpLDAPadmin/wiki/Installation-Instructions#install-from-the-source-code",
 	51 => "no longer maintained upstream, consider using socat or SSH",

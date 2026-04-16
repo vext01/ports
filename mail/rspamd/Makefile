@@ -2,13 +2,15 @@ COMMENT=	event-driven spam filtering system in C/Lua
 
 GH_ACCOUNT=	vstakhov
 GH_PROJECT=	rspamd
-GH_TAGNAME=	3.14.3
+GH_TAGNAME=	4.0.1
 
 CATEGORIES=	mail
 
 HOMEPAGE=	https://rspamd.com/
 
 MAINTAINER=	Stuart Henderson <stu.ports@spacehopper.org>
+
+EPOCH=		0
 
 # Apache License 2.0
 PERMIT_PACKAGE=	Yes
@@ -65,7 +67,7 @@ CONFIGURE_ARGS+= \
 # to line up @samples in plist
 ETC=		${SYSCONFDIR}
 FLAVOR_STRING=	${FLAVOR_EXT:S/-/,/g}
-SUBST_VARS+=	ETC FLAVOR_STRING
+SUBST_VARS+=	ETC FLAVOR_STRING HYPERSCAN_ONLY
 
 .include <bsd.port.arch.mk>
 .if !${PROPERTIES:Mlld}
@@ -88,6 +90,9 @@ WANTLIB+=	${MODLUA_WANTLIB}
 CONFIGURE_ARGS+= -DENABLE_HYPERSCAN=ON
 LIB_DEPENDS+=	textproc/hyperscan
 WANTLIB+=	hs
+HYPERSCAN_ONLY=
+.else
+HYPERSCAN_ONLY=	"@comment "
 .endif
 
 NO_TEST=	Yes

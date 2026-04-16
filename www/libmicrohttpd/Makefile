@@ -1,8 +1,8 @@
 COMMENT =	tiny embeddable httpd library written in C
-DISTNAME =	libmicrohttpd-1.0.2
+DISTNAME =	libmicrohttpd-1.0.4
 CATEGORIES =	www
 
-SHARED_LIBS +=	microhttpd                0.5 # 74.2
+SHARED_LIBS +=	microhttpd                0.7 # 74.3
 
 HOMEPAGE =	https://www.gnu.org/software/libmicrohttpd/
 

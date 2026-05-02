@@ -1,12 +1,12 @@
 COMMENT =	Firefox web browser, Extended Support Release
 ONLY_FOR_ARCHS =	amd64 aarch64 riscv64
 
-MOZILLA_VERSION =	140.9.1esr
+MOZILLA_VERSION =	140.10.0esr
 MOZILLA_BRANCH =	release
 MOZILLA_PROJECT =	firefox-esr
 MOZILLA_CODENAME =	browser
 MOZILLA_DIST =		firefox
-MOZILLA_PROFDATA_TASKID = Vd0znenNTH2bKjyrnJe6wg
+MOZILLA_PROFDATA_TASKID = THsb1e7AS2yg8qYR4GBISg
 
 WRKDIST =	${WRKDIR}/${MOZILLA_DIST}-${MOZILLA_DIST_VERSION:C/esr//}
 HOMEPAGE =	https://www.mozilla.org/firefox/organizations/
@@ -40,6 +40,9 @@ BUILD_DEPENDS +=	lang/wasi-sdk/compiler-rt \
 			lang/wasi-libc
 # mach uses pkg_resources
 BUILD_DEPENDS +=	devel/py-setuptools
+
+# audio/video support
+RUN_DEPENDS =		graphics/ffmpeg
 
 # uses pledge()
 WANTLIB += Xrandr Xtst
